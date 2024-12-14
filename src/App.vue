@@ -1,15 +1,17 @@
 <template>
   <div class="min-h-screen">
     <header class="bg-gray-100">
-  <div class="container mx-auto py-2 px-0">
-    <img
-      src="/src/assets/img/Direct-banking-lvb_01.jpg"
-      alt="logo"
-      class="w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
-    />
-  </div>
-</header>
-<nav class="hidden sm:block bg-gray-200 h-[70px] flex justify-between items-center px-4 sm:px-6 md:px-6 xl:max-w-screen-2xl mx-auto">
+      <div class="container mx-auto py-2 px-0">
+        <img
+          src="/src/assets/img/Direct-banking-lvb_01.jpg"
+          alt="logo"
+          class="w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
+        />
+      </div>
+    </header>
+    <nav
+      class="hidden sm:block bg-gray-200 h-[70px] flex justify-between items-center px-4 sm:px-6 md:px-6 xl:max-w-screen-2xl mx-auto"
+    >
       <div
         class="container mx-auto py-3 px-5 flex items-center justify-between"
       >
@@ -27,18 +29,16 @@
                 <a href="#" class="block w-[200px]">Register</a>
               </li>
               <li>
-                <a href="#" class="block ">Customer List</a>
+                <a href="#" class="block">Customer List</a>
               </li>
               <li>
-                <a href="#" class="block ">Authorize Customer</a>
+                <a href="#" class="block">Authorize Customer</a>
               </li>
               <li>
-                <a href="#" class="block "
-                  >Reset Password Customer</a
-                >
+                <a href="#" class="block">Reset Password Customer</a>
               </li>
               <li>
-                <a href="#" class="block ">Change Password</a>
+                <a href="#" class="block">Change Password</a>
               </li>
             </ul>
           </li>
@@ -51,9 +51,7 @@
               @mouseleave="hideDropdown"
             >
               <li>
-                <a href="#" class="block w-[160px]"
-                  >Report Customer List</a
-                >
+                <a href="#" class="block w-[160px]">Report Customer List</a>
               </li>
             </ul>
           </li>
@@ -65,11 +63,9 @@
               @mouseover="showDropdown"
             >
               <li>
-                <a href="#" class="block  w-[110px]"
-                  >Register User</a
-                >
+                <a href="#" class="block w-[110px]">Register User</a>
               </li>
-              <li><a href="#" class="block ">User List</a></li>
+              <li><a href="#" class="block">User List</a></li>
             </ul>
           </li>
         </ul>
@@ -112,7 +108,7 @@
               </li>
             </ul>
           </div>
-          <a href="#" class=" py-2 px-2">
+          <a href="#" class="py-2 px-2">
             <img
               src="@/assets/icons/icon-exit-white.png"
               alt="icon-exit"
@@ -208,23 +204,19 @@
             </svg>
           </div>
         </div>
-        <div
-          class="bg-gray-50 p-[20px] "
-          v-show="hiddenContent"
-        >
+        <div class="bg-gray-50 p-[20px]" v-show="hiddenContent">
           <div class="border border-gray-300 rounded-md p-[20px] h-full">
             <RouterView />
           </div>
         </div>
+        <footer>
+          <div class="container mx-auto py-0 px-0">
+            <img src="@/assets/img/Direct-banking-lvb_04.jpg" alt="logo" />
+          </div>
+        </footer>
       </div>
       <!-- Main -->
     </div>
-
-    <footer class="bg-gray-100">
-      <div class="container mx-auto py-1 px-1">
-        <img src="@/assets/img/Direct-banking-lvb_04.jpg" alt="logo" />
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -259,12 +251,12 @@ const options = ref([
   },
 ]);
 const showDropdown = () => {
-      isDropdownVisible.value = true;
-    };
+  isDropdownVisible.value = true;
+};
 
-    // const hideDropdown = () => {
-    //   isDropdownVisible.value = false;
-    // };
+// const hideDropdown = () => {
+//   isDropdownVisible.value = false;
+// };
 
 const toggleSideBar = () => {
   showSide.value = !showSide.value;
