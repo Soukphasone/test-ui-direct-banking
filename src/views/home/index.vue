@@ -4,7 +4,6 @@
         <h2 class="text-2xl font-bold">WELCOME TO LAOVIETBANK DIRECT BANKING</h2>
       </div>
       <div class="text-blue-900 mb-6">Name: Admin</div>
-  
       <!-- Search Section -->
       <div class="flex flex-wrap items-center md:gap-x-6 space-y-4 md:space-y-0">
         <div class="flex items-center space-x-3">

@@ -209,7 +209,7 @@
           </div>
         </div>
         <div
-          class="h-[calc(100%)] bg-gray-50 p-[20px]"
+          class="bg-gray-50 p-[20px] h[100vh]"
           v-show="hiddenContent"
         >
           <div class="border border-gray-300 rounded-md p-[20px] h-full">
