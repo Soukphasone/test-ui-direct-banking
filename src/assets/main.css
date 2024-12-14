@@ -1,0 +1,111 @@
+@import './base.css';
+
+@font-face {
+  font-family: 'NotoSansLao';
+  src: url('../fonts/Noto_Sans_Lao/static/NotoSansLao-Regular.ttf') format('truetype');
+}
+
+#app {
+  transition: 0.5s;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'NotoSansLao', Avenir, Helvetica, Arial, sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+nav {
+  background-image: url("@/assets/img/Direct-banking-lvb_07.jpg");
+  background-size: cover; /* Scales the image to cover the navbar area */
+  background-position: center; /* Centers the image in the navbar */
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  color: white;
+  
+}
+/*  */
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: rgb(189, 0, 0);
+  text-decoration: underline;
+}
+
+.group:hover .group-hover\\:block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/* change language */
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+.custom-select button {
+  background: #f0f0f0;
+  /* border: 2px solid black; */
+  padding: 5px 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  color: black;
+  border-radius: 2px;
+  width: 35px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 5px 10px 5px 5px;
+  margin: 0;
+  width: 130px;
+  color: black;
+}
+.dropdown li {
+  padding: 5px 10px 5px 5px;
+  /* cursor: pointer; */
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown li:hover {
+  background: #eee;
+}
+.flag-icon {
+  width: 20px;
+  height: 15px;
+}
+.flag-bt {
+  width: 20px;
+  height: 15px;
+  margin: 3px 0 0 2px;
+}
