@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container h-[100vp]">
     <header class="bg-gray-100">
   <div class="container mx-auto py-2 px-0">
     <img
