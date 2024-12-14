@@ -1,5 +1,5 @@
 <template>
-  <div class="container h-[100vp]">
+  <div class="min-h-screen">
     <header class="bg-gray-100">
   <div class="container mx-auto py-2 px-0">
     <img
@@ -209,7 +209,7 @@
           </div>
         </div>
         <div
-          class="bg-gray-50 p-[20px] h[100vh]"
+          class="bg-gray-50 p-[20px] "
           v-show="hiddenContent"
         >
           <div class="border border-gray-300 rounded-md p-[20px] h-full">
