@@ -6,8 +6,8 @@
         class="container mx-auto py-3 px-5 flex items-center justify-between"
       >
         <!-- Left section -->
-        <ul class="flex space-x-6">
-          <li><a href="#" class="text-white">Home</a></li>
+        <ul class="flex space-x-6 z-custom-100">
+          <li><a href="/" class="text-white">Home</a></li>
           <li class="relative group">
             <a href="#" class="text-white">Customer Account</a>
             <ul
@@ -16,10 +16,10 @@
               @mouseover="showDropdown"
             >
               <li>
-                <a href="#" class="block w-[200px]">Register</a>
+                <a href="/customer-register" class="block w-[200px]">Register</a>
               </li>
               <li>
-                <a href="#" class="block">Customer List</a>
+                <a href="/customer-list" class="block">Customer List</a>
               </li>
               <li>
                 <a href="#" class="block">Authorize Customer</a>
@@ -151,3 +151,7 @@ const getImagePath = (img) => {
   return new URL(`/src/assets/img/${img}`, import.meta.url).href;
 };
 </script>
+
+<style>
+
+</style>

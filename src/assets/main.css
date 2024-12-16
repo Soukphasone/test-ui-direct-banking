@@ -14,6 +14,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Nav Bar */
 nav {
   background-image: url("@/assets/img/Direct-banking-lvb_07.jpg");
   background-size: cover; /* Scales the image to cover the navbar area */
@@ -88,6 +91,7 @@ a:hover {
   margin: 0;
   width: 130px;
   color: black;
+  z-index: 100;
 }
 .dropdown li {
   padding: 5px 10px 5px 5px;
@@ -95,6 +99,7 @@ a:hover {
   font-size: 10px;
   display: flex;
   gap: 10px;
+
 }
 
 .dropdown li:hover {
