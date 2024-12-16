@@ -34,53 +34,52 @@
       <div class="mb-6">Balance:</div>
   
       <!-- Results Section -->
-      <div class="border rounded shadow-md bg-gray-50">
-            <el-table :data="tableData" style="width: 100%; height: 300px;">
-              <el-table-column type="selection" width="55"/>
-              <el-table-column label="Date" width="120">
-                <template #default="scope">{{ scope.row.date }}</template>
-              </el-table-column>
-              <el-table-column property="name" label="Name" width="120" />
-              <el-table-column
-                property="address"
-                label="use show-overflow-tooltip"
-                width="240"
-                show-overflow-tooltip
-              />
-              <el-table-column property="address" label="address" />
-            </el-table>
-          </div>
+      <div class="mt-4 overflow-x-auto">
+    <table
+      class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
+    >
+      <thead>
+        <tr class="bg-gray-100">
+          <th class="border border-gray-300 px-2 sm:px-4 py-2 w-[50px]">STT</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Branch</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Customer ID</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">User Name</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Full Name</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Create Date</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Maker ID</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">Description</th>
+          <th class="border border-gray-300 px-2 sm:px-4 py-2">
+            Authorize Status
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">Deposit</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+            + $1,000
+          </td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+            + $1,000
+          </td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+            + $1,000
+          </td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="flex justify-center py-4 sm:py-2">
+      <el-button type="primary">Refresh</el-button>
+      <el-button type="primary">Authorize</el-button>
+    </div>
+  </div>
     </main>
   </template>
   <script lang="ts" setup>
-  import { ElTable } from "element-plus";
-  
-  interface User {
-    date: string;
-    name: string;
-    address: string;
-  }
-  const tableData: User[] = [
-    {
-      date: "2016-05-04",
-      name: "Aleyna Kutzner",
-      address: "Lohrbergstr. 86c, Süd Lilli, Saarland",
-    },
-    {
-      date: "2016-05-03",
-      name: "Helen Jacobi",
-      address: "760 A Street, South Frankfield, Illinois",
-    },
-    {
-      date: "2016-05-02",
-      name: "Brandon Deckert",
-      address: "Arnold-Ohletz-Str. 41a, Alt Malinascheid, Thüringen",
-    },
-    {
-      date: "2016-05-01",
-      name: "Margie Smith",
-      address: "23618 Windsor Drive, West Ricardoview, Idaho",
-    },
-  ];
   </script>
   
