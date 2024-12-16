@@ -94,10 +94,11 @@
             <RouterView />
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   </div>
-  <Footer />
+  
 </template>
 
 <script setup>
