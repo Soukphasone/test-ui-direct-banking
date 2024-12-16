@@ -22,10 +22,10 @@
                 <a href="/customer-list" class="block">Customer List</a>
               </li>
               <li>
-                <a href="#" class="block">Authorize Customer</a>
+                <a href="/authorization-list" class="block">Authorize Customer</a>
               </li>
               <li>
-                <a href="#" class="block">Reset Password Customer</a>
+                <a href="/reset-password-customer" class="block">Reset Password Customer</a>
               </li>
               <li>
                 <a href="#" class="block">Change Password</a>
@@ -41,7 +41,7 @@
               @mouseleave="hideDropdown"
             >
               <li>
-                <a href="#" class="block w-[160px]">Report Customer List</a>
+                <a href="/report-customer-list" class="block w-[160px]">Report Customer List</a>
               </li>
             </ul>
           </li>

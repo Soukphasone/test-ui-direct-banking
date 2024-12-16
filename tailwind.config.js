@@ -7,9 +7,12 @@ export default {
   theme: {
     extend: {
       zIndex: {
-        'custom-1': '-1',    // Custom negative z-index
-        'custom-100': '100', // Custom high z-index
-        'custom-9999': '9999', // Super high z-index
+        'custom-1': '-1',    
+        'custom-100': '100', 
+        'custom-9999': '9999', 
+      },
+      screens: {
+        xs: '480px', // Custom breakpoint for extra small screens
       },
     },
   },

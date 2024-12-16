@@ -34,54 +34,8 @@
       <div class="mb-6">Balance:</div>
   
       <!-- Results Section -->
-      <div class="mt-8">
-        <h3 class="text-lg font-semibold mb-4">Search Results</h3>
-        <div class="border rounded shadow-md p-4 bg-gray-50">
-          <!-- Placeholder for dynamic content -->
-          <!-- <p class="text-gray-500">
-            No results found. Please select a date range and search.
-          </p> -->
-  
-          <!-- Responsive Table -->
-          <!-- <div class="mt-4 overflow-x-auto">
-        <table class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base">
-          <thead>
-            <tr class="bg-gray-100">
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Date</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Description</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">2024-12-10</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">Deposit</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">+ $1,000</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">+ $1,000</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">+ $1,000</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-            </tr>
-            <tr>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">2024-12-12</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">Withdrawal</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">- $500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">- $500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">- $500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-            </tr>
-          </tbody>
-        </table>
-      </div> -->
-            <el-table :data="tableData" style="width: 100%; height: 200px;">
+      <div class="border rounded shadow-md bg-gray-50">
+            <el-table :data="tableData" style="width: 100%; height: 300px;">
               <el-table-column type="selection" width="55"/>
               <el-table-column label="Date" width="120">
                 <template #default="scope">{{ scope.row.date }}</template>
@@ -96,7 +50,6 @@
               <el-table-column property="address" label="address" />
             </el-table>
           </div>
-        </div>
     </main>
   </template>
   <script lang="ts" setup>

@@ -22,6 +22,24 @@ const router = createRouter({
       component: () => import('@/views/customer/CustomerList.vue'),
 
     },
+    {
+      path: '/authorization-list',
+      name: 'authorization-list',
+      component: () => import('@/views/customer/Authorization.vue'),
+
+    },
+    {
+      path: '/reset-password-customer',
+      name: 'reset-password-customer',
+      component: () => import('@/views/customer/ResetPasswordCustomer.vue'),
+
+    },
+    {
+      path: '/report-customer-list',
+      name: 'report-customer-list',
+      component: () => import('@/views/customer/ReportCustomerList.vue'),
+
+    },
   ],
 })
 

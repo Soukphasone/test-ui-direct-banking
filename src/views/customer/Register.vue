@@ -1,7 +1,9 @@
 <template>
   <div class="bg-gray-100 flex items-center justify-center">
     <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
-      <h2 class="text-2xl font-bold mb-6 text-gray-800">
+      <h2
+        class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800"
+      >
         Customer Information
       </h2>
       <form>
@@ -75,8 +77,8 @@
         <div class="text-lg font-bold mb-2 text-center text-gray-800">
           Login Information
         </div>
-          <!-- User name -->
-          <div class="mb-4">
+        <!-- User name -->
+        <div class="mb-4">
           <label for="username" class="block text-sm font-medium text-gray-700"
             >User name</label
           >
@@ -88,8 +90,8 @@
             required
           />
         </div>
-          <!-- Password -->
-          <div class="mb-4">
+        <!-- Password -->
+        <div class="mb-4">
           <label for="password" class="block text-sm font-medium text-gray-700"
             >Password</label
           >
@@ -101,9 +103,11 @@
             required
           />
         </div>
-          <!-- Confirm pass -->
-          <div class="mb-4">
-          <label for="confirmPassword" class="block text-sm font-medium text-gray-700"
+        <!-- Confirm pass -->
+        <div class="mb-4">
+          <label
+            for="confirmPassword"
+            class="block text-sm font-medium text-gray-700"
             >confirm Password</label
           >
           <input
@@ -114,9 +118,6 @@
             required
           />
         </div>
-
-       
-      
 
         <!-- Submit Button -->
         <div class="mt-6">

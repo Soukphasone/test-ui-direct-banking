@@ -1,16 +1,17 @@
 <template>
-  <div class="min-h-screen">
+  <h2
+    class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center"
+  >
+    Customer List
+  </h2>
+  <div class="border rounded shadow-md bg-gray-50">
     <el-table :data="filterTableData" style="width: 100%">
       <el-table-column label="Full name" prop="name" />
       <el-table-column label="Email" prop="email" />
       <el-table-column label="Tel" prop="tel" />
       <el-table-column align="right">
         <template #header>
-          <el-input
-            v-model="search"
-            size="small"
-            placeholder="Type to search"
-          />
+          <el-input v-model="search" size="small" placeholder="Search" />
         </template>
         <template #default="scope">
           <el-button size="small" @click="handleEdit(scope.$index, scope.row)">
@@ -26,8 +27,13 @@
         </template>
       </el-table-column>
     </el-table>
-    <div class="py-4">
-      <el-pagination background layout="prev, pager, next" :total="1000" />
+    <div class="flex justify-center py-4 sm:py-2">
+      <el-pagination
+        background
+        layout="prev, pager, next"
+        :total="1000"
+        class="text-base sm:text-sm xs:text-xs"
+      />
     </div>
   </div>
 </template>
