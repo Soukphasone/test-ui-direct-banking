@@ -1,6 +1,6 @@
 <template>
      <header class="bg-gray-100">
-      <div class="container mx-auto py-2 px-0">
+      <div class="container mx-auto py-0 px-0">
         <img
           src="/src/assets/img/Direct-banking-lvb_01.jpg"
           alt="logo"

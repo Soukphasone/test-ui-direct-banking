@@ -1,8 +1,12 @@
 <template>
-  <div class="min-h-screen">
+  <div
+    class="min-h-screen border border-gray-600 w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
+  >
     <Header />
     <Navbar />
-    <div class="m-screen h-screen flex">
+    <div
+      class="flex w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
+    >
       <!-- Side bar -->
       <div
         class="hidden max-sm:block w-[300px] h-full bg-gray-200 text-white"
@@ -12,20 +16,160 @@
           <div
             class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
           >
+            <!-- Main Menu -->
             <div class="flex flex-col justify-between space-y-[10px]">
-              <router-link
-                to="/"
+              <div
+               @click.prevent="otherLink('home')"
                 class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-100 hover:bg-gray-100 hover:text-gray-900"
               >
                 <div class="text-mg-l text-black">Home</div>
-              </router-link>
-              <router-link
-                to="/"
-                class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 hover:bg-gray-100 hover:text-gray-900"
-              >
-                <div class="text-mg-l text-black">Profile</div>
-              </router-link>
+              </div>
+
+              <!-- Customer Account with Dropdown -->
+              <div class="relative">
+                <div
+                  @click="showCustomerDropdown = !showCustomerDropdown"
+                  class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+                >
+                  <div class="text-mg-l text-black">Customer Account</div>
+                  <svg
+                    class="ml-auto w-4 h-4 transition-transform duration-300"
+                    :class="{ 'rotate-180': showCustomerDropdown }"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+
+                <!-- Submenu -->
+                <div
+                  v-show="showCustomerDropdown"
+                  class="absolute left-0 mt-1 w-full bg-white shadow-md rounded-md z-10"
+                >
+                  <div
+                    @click.prevent="otherLink('customer-register')"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Register
+                  </div>
+                  <div
+                     @click.prevent="otherLink('customer-list')"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Customer List
+                  </div>
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Authorize Customer
+                  </router-link>
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Reset Password Customer
+                  </router-link>
+                </div>
+              </div>
+              <!-- Customer Report with Dropdown -->
+              <div class="relative">
+                <div
+                  @click="showReportDropdown = !showReportDropdown"
+                  class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+                >
+                  <div class="text-mg-l text-black">Report</div>
+                  <svg
+                    class="ml-auto w-4 h-4 transition-transform duration-300"
+                    :class="{ 'rotate-180': showReportDropdown }"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+
+                <!-- Submenu -->
+                <div
+                  v-show="showReportDropdown"
+                  class="absolute left-0 mt-1 w-full bg-white shadow-md rounded-md z-10"
+                >
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Report Customer List
+                  </router-link>
+                </div>
+              </div>
+              <!-- Customer Admin with Dropdown -->
+
+              <div class="relative">
+                <div
+                  @click="showAdminDropdown = !showAdminDropdown"
+                  class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+                >
+                  <div class="text-mg-l text-black">Admin</div>
+                  <svg
+                    class="ml-auto w-4 h-4 transition-transform duration-300"
+                    :class="{ 'rotate-180': showAdminDropdown }"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </div>
+
+                <!-- Submenu -->
+                <div
+                  v-show="showAdminDropdown"
+                  class="absolute left-0 mt-1 w-full bg-white shadow-md rounded-md z-10"
+                >
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Register User
+                  </router-link>
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    User List
+                  </router-link>
+                  <router-link
+                    to="/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Change Password Login
+                  </router-link>
+                </div>
+              </div>
             </div>
+
+            <!-- Exit Button -->
             <div class="h-[50px]">
               <div>
                 <router-link
@@ -94,24 +238,55 @@
             <RouterView />
           </div>
         </div>
-        <Footer />
+        <Footer :hiddenContent="hiddenContent" />
       </div>
     </div>
   </div>
-  
 </template>
 
 <script setup>
 import { ref, defineAsyncComponent } from "vue";
-import { RouterView } from "vue-router";
+import { RouterView, useRouter } from "vue-router";
 const Navbar = defineAsyncComponent(() => import("@/components/Navbar.vue"));
 const Header = defineAsyncComponent(() => import("@/components/Header.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
 const showSide = ref(false);
 const hiddenContent = ref(true);
-
+const showCustomerDropdown = ref(false);
+const showReportDropdown = ref(false);
+const showAdminDropdown = ref(false);
+const router = useRouter();
 const toggleSideBar = () => {
   showSide.value = !showSide.value;
   hiddenContent.value = !showSide.value;
 };
+const otherLink = async (value) => {
+  if (value === "home") {
+    router.push("/");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+  if (value === "customer-register") {
+    router.push("/customer/register");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+  if (value === "customer-list") {
+    router.push("/customer/list");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+};
 </script>
+<style scoped>
+/* Optional: Add smooth dropdown animation */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+</style>

@@ -22,7 +22,7 @@ nav {
   background-size: cover; /* Scales the image to cover the navbar area */
   background-position: center; /* Centers the image in the navbar */
   background-repeat: no-repeat;
-  border: 2px solid white;
+  border-top: 4px solid white;
   color: white;
   
 }

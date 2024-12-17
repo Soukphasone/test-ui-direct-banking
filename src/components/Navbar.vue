@@ -1,112 +1,114 @@
 <template>
-      <nav
-      class="hidden sm:block bg-gray-200 h-[70px] flex justify-between items-center px-4 sm:px-6 md:px-6 xl:max-w-screen-2xl mx-auto"
-    >
-      <div
-        class="container mx-auto py-3 px-5 flex items-center justify-between"
-      >
-        <!-- Left section -->
-        <ul class="flex space-x-6 z-custom-100">
-          <li><a href="/" class="text-white">Home</a></li>
-          <li class="relative group">
-            <a href="#" class="text-white">Customer Account</a>
-            <ul
-              v-show="isDropdownVisible"
-              class="absolute bg-white border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
-              @mouseover="showDropdown"
-            >
-              <li>
-                <a href="/customer-register" class="block w-[200px]">Register</a>
-              </li>
-              <li>
-                <a href="/customer-list" class="block">Customer List</a>
-              </li>
-              <li>
-                <a href="/authorization-list" class="block">Authorize Customer</a>
-              </li>
-              <li>
-                <a href="/reset-password-customer" class="block">Reset Password Customer</a>
-              </li>
-              <li>
-                <a href="#" class="block">Change Password</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="text-white">Report</a>
-            <ul
-              v-show="isDropdownVisible"
-              class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
-              @mouseover="showDropdown"
-              @mouseleave="hideDropdown"
-            >
-              <li>
-                <a href="/report-customer-list" class="block w-[160px]">Report Customer List</a>
-              </li>
-            </ul>
-          </li>
-          <li class="relative group">
-            <a href="#" class="text-white">Admin</a>
-            <ul
-              v-show="isDropdownVisible"
-              class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
-              @mouseover="showDropdown"
-            >
-              <li>
-                <a href="#" class="block w-[110px]">Register User</a>
-              </li>
-              <li><a href="#" class="block">User List</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Right section -->
-        <div class="flex space-x-4">
-          <div class="custom-select">
-            <button @click="toggleDropdown">
-              <span v-if="check === 'la'">
-                <img
-                  src="@/assets/img/laos-flag.png"
-                  alt="flag"
-                  class="flag-icon"
-              /></span>
-              <span v-else-if="check === 'en'">
-                <img
-                  src="@/assets/img/united-states-flag-icon.png"
-                  alt="flag"
-                  class="flag-icon"
-              /></span>
-              <span v-else>
-                <img
-                  src="@/assets/img/vietnam-flag.png"
-                  alt="flag"
-                  class="flag-bt"
-              /></span>
-            </button>
-            <ul v-if="isOpen" class="dropdown">
-              <li
-                v-for="option in options"
-                :key="option.value"
-                @click="selectOption(option.value)"
+  <nav
+    class="hidden sm:block bg-gray-200 h-[70px] flex justify-between items-center px-4 w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
+  >
+    <div class="container mx-auto py-3 px-5 flex items-center justify-between">
+      <!-- Left section -->
+      <ul class="flex space-x-6 z-custom-100">
+        <li><a href="/" class="text-white">Home</a></li>
+        <li class="relative group">
+          <a href="#" class="text-white">Customer Account</a>
+          <ul
+            v-show="isDropdownVisible"
+            class="absolute bg-white border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
+            @mouseover="showDropdown"
+          >
+            <li>
+              <a href="/customer/register" class="block w-[200px]">Register</a>
+            </li>
+            <li>
+              <a href="/customer-list" class="block">Customer List</a>
+            </li>
+            <li>
+              <a href="/authorization-list" class="block">Authorize Customer</a>
+            </li>
+            <li>
+              <a href="/reset-password-customer" class="block"
+                >Reset Password Customer</a
               >
-                <img
-                  :src="getImagePath(option.img)"
-                  alt="flag"
-                  class="flag-icon"
-                />
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="text-white">Report</a>
+          <ul
+            v-show="isDropdownVisible"
+            class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
+            @mouseover="showDropdown"
+            @mouseleave="hideDropdown"
+          >
+            <li>
+              <a href="/report-customer-list" class="block w-[160px]"
+                >Report Customer List</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <a href="#" class="text-white">Admin</a>
+          <ul
+            v-show="isDropdownVisible"
+            class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
+            @mouseover="showDropdown"
+          >
+            <li>
+              <a href="#" class="block w-[180px]">Register User</a>
+            </li>
+            <li><a href="#" class="block">User List</a></li>
+            <li>
+              <a href="#" class="block">Change Password Login</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Right section -->
+      <div class="flex space-x-4">
+        <div class="custom-select">
+          <button @click="toggleDropdown">
+            <span v-if="check === 'la'">
+              <img
+                src="@/assets/img/laos-flag.png"
+                alt="flag"
+                class="flag-icon"
+            /></span>
+            <span v-else-if="check === 'en'">
+              <img
+                src="@/assets/img/united-states-flag-icon.png"
+                alt="flag"
+                class="flag-icon"
+            /></span>
+            <span v-else>
+              <img
+                src="@/assets/img/vietnam-flag.png"
+                alt="flag"
+                class="flag-bt"
+            /></span>
+          </button>
+          <ul v-if="isOpen" class="dropdown">
+            <li
+              v-for="option in options"
+              :key="option.value"
+              @click="selectOption(option.value)"
+            >
+              <img
+                :src="getImagePath(option.img)"
+                alt="flag"
+                class="flag-icon"
+              />
 
-                {{ option.language }}
-              </li>
-            </ul>
-          </div>
-          <a href="#" class="py-2 px-2">
-            <img
-              src="@/assets/icons/icon-exit-white.png"
-              alt="icon-exit"
-              style="width: 25px; height: 25px"
-          /></a>
+              {{ option.language }}
+            </li>
+          </ul>
         </div>
+        <a href="#" class="py-2 px-2">
+          <img
+            src="@/assets/icons/icon-exit-white.png"
+            alt="icon-exit"
+            style="width: 25px; height: 25px"
+        /></a>
       </div>
-    </nav>
+    </div>
+  </nav>
 </template>
 <script setup>
 import { ref } from "vue";
@@ -152,6 +154,4 @@ const getImagePath = (img) => {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>
