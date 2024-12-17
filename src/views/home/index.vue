@@ -11,7 +11,7 @@
       </h2>
       <div class="text-blue-900 mb-6">Name: Admin</div>
       <!-- Search Section -->
-      <div class="flex flex-wrap items-center md:gap-x-6 space-y-4 md:space-y-0">
+      <div class="flex flex-wrap items-center text-black md:gap-x-6 space-y-4 md:space-y-0">
         <div class="flex items-center space-x-3">
           <label for="account-select" class="font-medium">Account:</label>
           <select id="account-select" class="border rounded px-2 py-1">
@@ -37,10 +37,10 @@
         </div>
       </div>
   
-      <div class="mb-6">Balance:</div>
+      <div class="mb-6 text-black">Balance:</div>
   
       <!-- Results Section -->
-      <div class="mt-4 overflow-x-auto">
+      <div class="mt-4 overflow-x-auto text-black">
     <table
       class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
     >
