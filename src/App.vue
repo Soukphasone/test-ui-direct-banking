@@ -89,7 +89,8 @@ type RouteLink =
   | "home"
   | "customer-register"
   | "customer-list"
-  | "authorization-list";
+  | "authorization-list"
+  |"report-customer-list";
 
 const otherLink = async (value: RouteLink): Promise<void> => {
   console.log("Value At APP:", value);
@@ -104,6 +105,9 @@ const otherLink = async (value: RouteLink): Promise<void> => {
       await router.push("/customer/list");
       break;
     case "authorization-list":
+      await router.push("/authorization/list");
+      break;
+    case "report-customer-list":
       await router.push("/authorization/list");
       break;
   }

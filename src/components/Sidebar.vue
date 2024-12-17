@@ -100,12 +100,12 @@
               v-show="showReportDropdown"
               class="absolute left-0 mt-1 w-full bg-white shadow-md rounded-md z-10"
             >
-              <router-link
-                to="/"
+              <div
+                @click.prevent="navigate('report-customer-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 Report Customer List
-              </router-link>
+              </div>
             </div>
           </div>
           <!-- Customer Admin with Dropdown -->
@@ -185,12 +185,13 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 defineProps<{
   showSide: boolean;
-  navigate: (value: "home" | "customer-register" | "customer-list" | "authorization-list") => Promise<void>;
+  navigate: (
+    value: "home" | "customer-register" | "customer-list" | "authorization-list" | "report-customer-list"
+  ) => Promise<void>;
 }>();
 const showCustomerDropdown = ref(false);
 const showReportDropdown = ref(false);
 const showAdminDropdown = ref(false);
-
 </script>
 <style scoped>
 /* Optional: Add smooth dropdown animation */

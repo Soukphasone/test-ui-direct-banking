@@ -6,38 +6,38 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/home/index.vue'),
-      // component: () => import('@/views/customer/CustomerList.vue'),
+      component: () => import('/src/views/home/index.vue'),
+      // component: () => import('/src/views/customer/CustomerList.vue'),
 
     },
     {
       path: '/customer/register',
       name: 'customer-register',
-      component: () => import('@/views/customer/Register.vue'),
+      component: () => import('/src/views/customer/Register.vue'),
 
     },
     {
       path: '/customer/list',
       name: 'customer-list',
-      component: () => import('@/views/customer/CustomerList.vue'),
+      component: () => import('/src/views/customer/CustomerList.vue'),
 
     },
     {
       path: '/authorization/list',
       name: 'authorization-list',
-      component: () => import('@/views/customer/Authorization.vue'),
+      component: () => import('/src/views/customer/Authorization.vue'),
 
     },
     {
       path: '/reset-password-customer',
       name: 'reset-password-customer',
-      component: () => import('@/views/customer/ResetPasswordCustomer.vue'),
+      component: () => import('/src/views/customer/ResetPasswordCustomer.vue'),
 
     },
     {
       path: '/report-customer-list',
       name: 'report-customer-list',
-      component: () => import('@/views/customer/ReportCustomerList.vue'),
+      component: () => import('/src/views/customer/ReportCustomerList.vue'),
 
     },
   ],
