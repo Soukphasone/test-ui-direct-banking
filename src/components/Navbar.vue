@@ -17,10 +17,10 @@
               <a href="/customer/register" class="block w-[200px]">Register</a>
             </li>
             <li>
-              <a href="/customer-list" class="block">Customer List</a>
+              <a href="/customer/list" class="block">Customer List</a>
             </li>
             <li>
-              <a href="/authorization-list" class="block">Authorize Customer</a>
+              <a href="/authorization/list" class="block">Authorize Customer</a>
             </li>
             <li>
               <a href="/reset-password-customer" class="block"

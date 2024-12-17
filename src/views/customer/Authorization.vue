@@ -1,4 +1,9 @@
 <template>
+  <main class="container mx-auto">
+    <div class="bg-gray-100 flex items-center justify-center">
+    <div
+      class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full"
+    >
   <h2
     class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center"
   >
@@ -48,36 +53,10 @@
       <el-button type="primary">Authorize</el-button>
     </div>
   </div>
+</div>
+    </div>
+  </main>
 </template>
 
 <script lang="ts" setup>
-import { ElTable } from "element-plus";
-
-interface User {
-  date: string;
-  name: string;
-  address: string;
-}
-const tableData: User[] = [
-  {
-    date: "2016-05-04",
-    name: "Aleyna Kutzner",
-    address: "Lohrbergstr. 86c, Süd Lilli, Saarland",
-  },
-  {
-    date: "2016-05-03",
-    name: "Helen Jacobi",
-    address: "760 A Street, South Frankfield, Illinois",
-  },
-  {
-    date: "2016-05-02",
-    name: "Brandon Deckert",
-    address: "Arnold-Ohletz-Str. 41a, Alt Malinascheid, Thüringen",
-  },
-  {
-    date: "2016-05-01",
-    name: "Margie Smith",
-    address: "23618 Windsor Drive, West Ricardoview, Idaho",
-  },
-];
 </script>

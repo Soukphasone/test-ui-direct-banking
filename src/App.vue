@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen border border-gray-600 w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
+    class="min-h-screen border border-gray-600 w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl sm:border-0 mx-auto"
   >
     <Header />
     <Navbar />
@@ -66,12 +66,12 @@
                   >
                     Customer List
                   </div>
-                  <router-link
-                    to="/"
+                  <div
+                    @click.prevent="otherLink('authorization-list')"
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
                     Authorize Customer
-                  </router-link>
+                  </div>
                   <router-link
                     to="/"
                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div class="bg-gray-50 p-[20px]" v-show="hiddenContent">
-          <div class="border border-gray-300 rounded-md p-[20px] h-full">
+          <div class="h-full min-h-screen">
             <RouterView />
           </div>
         </div>
@@ -273,6 +273,11 @@ const otherLink = async (value) => {
   }
   if (value === "customer-list") {
     router.push("/customer/list");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+  if (value === "authorization-list") {
+    router.push("/authorization/list");
     showSide.value = !showSide.value;
     hiddenContent.value = !showSide.value;
   }

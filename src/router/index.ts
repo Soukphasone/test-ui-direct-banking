@@ -23,7 +23,7 @@ const router = createRouter({
 
     },
     {
-      path: '/authorization-list',
+      path: '/authorization/list',
       name: 'authorization-list',
       component: () => import('@/views/customer/Authorization.vue'),
 
