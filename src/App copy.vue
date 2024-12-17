@@ -8,7 +8,7 @@
       class="flex w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto"
     >
       <!-- Side bar -->
-      <sidebar :showSide="showSide" :navigate="otherLink" />
+      <sidebar :showSide="showSide" :otherLink="otherLink"/>
       <div class="w-full h-full bg-gray-100">
         <div
           class="hidden max-sm:block h-[50px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 border-b"
@@ -65,50 +65,41 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, defineAsyncComponent } from "vue";
 import { RouterView, useRouter } from "vue-router";
-
-// Import components asynchronously
 const Navbar = defineAsyncComponent(() => import("@/components/Navbar.vue"));
 const Sidebar = defineAsyncComponent(() => import("@/components/Sidebar.vue"));
 const Header = defineAsyncComponent(() => import("@/components/Header.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
-
-const showSide = ref<boolean>(false);
-const hiddenContent = ref<boolean>(true);
-
+const showSide = ref(false);
+const hiddenContent = ref(true);
 const router = useRouter();
-
-const toggleSideBar = (): void => {
+const toggleSideBar = () => {
   showSide.value = !showSide.value;
   hiddenContent.value = !showSide.value;
 };
-
-type RouteLink =
-  | "home"
-  | "customer-register"
-  | "customer-list"
-  | "authorization-list";
-
-const otherLink = async (value: RouteLink): Promise<void> => {
-  console.log("Value At APP:", value);
-  switch (value) {
-    case "home":
-      await router.push("/");
-      break;
-    case "customer-register":
-      await router.push("/customer/register");
-      break;
-    case "customer-list":
-      await router.push("/customer/list");
-      break;
-    case "authorization-list":
-      await router.push("/authorization/list");
-      break;
+const otherLink = async (value) => {
+  if (value === "home") {
+    router.push("/");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
   }
-  // Update visibility state
-  showSide.value = false;
-  hiddenContent.value = true;
-};
+  if (value === "customer-register") {
+    router.push("/customer/register");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+  if (value === "customer-list") {
+    router.push("/customer/list");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+  if (value === "authorization-list") {
+    router.push("/authorization/list");
+    showSide.value = !showSide.value;
+    hiddenContent.value = !showSide.value;
+  }
+}
 </script>
+<style scoped></style>

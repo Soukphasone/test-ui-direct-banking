@@ -1,11 +1,11 @@
 <template>
   <div class="min-h-screen">
     <div class="bg-gray-100 flex items-center justify-center">
-      <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-xl">
+      <div class="border border-bg-gray-100 bg-white shadow-md rounded-lg p-8 w-full max-w-xl">
         <h2
-          class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800"
+          class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center"
         >
-          Report Custom List
+          Report Customer List
         </h2>
         <div
           class="flex flex-wrap items-center gap-y-4 md:gap-x-6 space-y-4 md:space-y-0"
