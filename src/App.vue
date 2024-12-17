@@ -70,10 +70,10 @@ import { ref, defineAsyncComponent } from "vue";
 import { RouterView, useRouter } from "vue-router";
 
 // Import components asynchronously
-const Navbar = defineAsyncComponent(() => import("@/components/Navbar.vue"));
-const Sidebar = defineAsyncComponent(() => import("@/components/Sidebar.vue"));
-const Header = defineAsyncComponent(() => import("@/components/Header.vue"));
-const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
+const Navbar = defineAsyncComponent(() => import("./components/Navbar.vue"));
+const Sidebar = defineAsyncComponent(() => import("./components/Sidebar.vue"));
+const Header = defineAsyncComponent(() => import("./components/Header.vue"));
+const Footer = defineAsyncComponent(() => import("./components/Footer.vue"));
 
 const showSide = ref<boolean>(false);
 const hiddenContent = ref<boolean>(true);
