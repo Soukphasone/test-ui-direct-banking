@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "module": "ESNext",  // or "ES2020", "ES2022"
-    "target": "ESNext",  // or "ES2020", "ES2022"
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "strict": true
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   }
 }
