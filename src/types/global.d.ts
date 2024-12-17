@@ -1,3 +1,3 @@
-// declare module '@/stores/webStore';
-// declare module '@/service/service';
-// declare module '@/util/url';
+declare module '@/stores/webStore';
+declare module '@/service/service';
+declare module '@/util/url';
