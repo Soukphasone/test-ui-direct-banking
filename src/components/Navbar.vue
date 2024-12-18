@@ -5,32 +5,38 @@
     <div class="container mx-auto py-3 px-5 flex items-center justify-between">
       <!-- Left section -->
       <ul class="flex space-x-6 z-custom-100">
-        <li><a href="/" class="text-white">Home</a></li>
+        <li><router-link to="/" class="text-white">Home</router-link></li>
         <li class="relative group">
-          <a href="#" class="text-white">Customer Account</a>
+          <a class="text-white">Customer Account</a>
           <ul
             v-show="isDropdownVisible"
             class="absolute bg-white border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
             @mouseover="showDropdown"
           >
             <li>
-              <a href="/customer/register" class="block w-[200px]">Register</a>
+              <router-link to="/customer/register" class="block w-[200px]"
+                >Register</router-link
+              >
             </li>
             <li>
-              <a href="/customer/list" class="block">Customer List</a>
+              <router-link to="/customer/list" class="block"
+                >Customer List</router-link
+              >
             </li>
             <li>
-              <a href="/authorization/list" class="block">Authorize Customer</a>
+              <router-link to="/authorization/list" class="block"
+                >Authorize Customer</router-link
+              >
             </li>
             <li>
-              <a href="/reset-password-customer" class="block"
-                >Reset Password Customer</a
+              <router-link to="/reset-password-customer" class="block"
+                >Reset Password Customer</router-link
               >
             </li>
           </ul>
         </li>
         <li class="relative group">
-          <a href="#" class="text-white">Report</a>
+          <a class="text-white">Report</a>
           <ul
             v-show="isDropdownVisible"
             class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
@@ -38,8 +44,8 @@
             @mouseleave="hideDropdown"
           >
             <li>
-              <a href="/report-customer-list" class="block w-[160px]"
-                >Report Customer List</a
+              <router-link to="/report-customer-list" class="block w-[160px]"
+                >Report Customer List</router-link
               >
             </li>
           </ul>
@@ -52,11 +58,13 @@
             @mouseover="showDropdown"
           >
             <li>
-              <a href="/admin/user/register" class="block w-[180px]">Register User</a>
+              <router-link to="/admin/user/register" class="block w-[180px]"
+                >Register User</router-link
+              >
             </li>
-            <li><a href="/admin/user/list" class="block">User List</a></li>
+            <li><router-link to="/admin/user/list" class="block">User List</router-link></li>
             <li>
-              <a href="/change-password" class="block">Change Password Login</a>
+              <router-link to="/change-password" class="block">Change Password Login</router-link>
             </li>
           </ul>
         </li>

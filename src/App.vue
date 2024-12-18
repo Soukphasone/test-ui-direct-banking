@@ -77,9 +77,7 @@ const Footer = defineAsyncComponent(() => import("./components/Footer.vue"));
 
 const showSide = ref<boolean>(false);
 const hiddenContent = ref<boolean>(true);
-
 const router = useRouter();
-
 const toggleSideBar = (): void => {
   showSide.value = !showSide.value;
   hiddenContent.value = !showSide.value;
