@@ -56,7 +56,7 @@
             </li>
             <li><a href="/admin/user/list" class="block">User List</a></li>
             <li>
-              <a href="#" class="block">Change Password Login</a>
+              <a href="/change-password" class="block">Change Password Login</a>
             </li>
           </ul>
         </li>

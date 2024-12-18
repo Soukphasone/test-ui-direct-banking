@@ -110,6 +110,9 @@ const otherLink = async (value: any): Promise<void> => {
     case "admin-user-list":
       await router.push("/admin/user/list");
       break;
+    case "change-password":
+      await router.push("/change-password");
+      break;
   }
   // Update visibility state
   showSide.value = false;

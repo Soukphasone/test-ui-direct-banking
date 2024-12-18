@@ -5,7 +5,7 @@
         class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full"
       >
         <h2
-          class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center"
+          class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center text-center"
         >
           WELCOME TO LAOVIETBANK DIRECT BANKING
         </h2>

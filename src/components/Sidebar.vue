@@ -151,7 +151,7 @@
                 User List
               </div>
               <div
-                @click.prevent="navigate('change-password-login')"
+                @click.prevent="navigate('change-password')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 Change Password Login
