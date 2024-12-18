@@ -3,7 +3,7 @@
     <div class="bg-gray-100 flex items-center justify-center">
       <div class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
         <h2
-          class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 "
+          class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-black"
         >
           Customer Information
         </h2>
@@ -20,7 +20,7 @@
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-500"
               required
             >
-              <option value="" disabled>Select a branch</option>
+              <option value="" disabled selected>Select a branch</option>
               <option
                 v-for="branch in branches"
                 :key="branch.id"

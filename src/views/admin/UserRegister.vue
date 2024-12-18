@@ -5,7 +5,7 @@
         class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg"
       >
         <h2
-          class="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6"
+          class="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-black"
         >
           User Information
         </h2>
@@ -18,7 +18,7 @@
             <input
               type="text"
               id="name"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your full name"
               required
             />
@@ -31,7 +31,7 @@
             <input
               type="tel"
               id="username"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 "
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 "
               placeholder="Enter your user name"
               required
             />
@@ -44,7 +44,7 @@
             <input
               type="tel"
               id="password"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your password"
               required
             />
@@ -57,17 +57,17 @@
             <input
               type="tel"
               id="confirmPassword"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your confirm password"
               required
             />
           </div>
           <!-- Role -->
           <div class="mb-4">
-            <label for="role" class="block text-sm font-medium">Role</label>
+            <label for="role" class="block text-sm font-medium text-black">Role</label>
             <select
               id="role"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-400"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-500"
               required
             >
               <option value="" disabled selected>Select a role</option>
@@ -85,7 +85,7 @@
             <input
               type="tel"
               id="phone"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your phone number"
               required
             />
@@ -99,7 +99,7 @@
             <input
               type="email"
               id="email"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your email"
               required
             />

@@ -9,7 +9,7 @@
         >
           Customer Information
         </h2>
-        <div class="mt-4 overflow-x-auto">
+        <div class="mt-4 overflow-x-auto text-black">
           <table
             class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
           >
@@ -45,28 +45,26 @@
             <tbody>
               <tr>
                 <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">010</td>
                 <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Deposit
+                  010265044
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  03/05/2024
                 </td>
                 <td
                   class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
                 >
-                  + $1,000
+                  012INTHAVA
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-                <td
-                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
-                >
-                  + $1,000
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-                <td
-                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
-                >
-                  + $1,000
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">Add New User</td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">U</td>
               </tr>
             </tbody>
           </table>
