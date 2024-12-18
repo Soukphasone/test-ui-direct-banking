@@ -99,7 +99,7 @@ const otherLink = async (value: any): Promise<void> => {
       await router.push("/authorization/list");
       break;
     case "report-customer-list":
-      await router.push("/authorization/list");
+      await router.push("/report-customer-list");
       break;
     case "reset-password-customer":
       await router.push("/reset-password-customer");
