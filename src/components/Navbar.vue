@@ -79,7 +79,7 @@
             /></span>
             <span v-else>
               <img
-                src="@/assets/img/vietnam-flag.png"
+                src="@/assets/img/united-states-flag-icon.png"
                 alt="flag"
                 class="flag-bt"
             /></span>
