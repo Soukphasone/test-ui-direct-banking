@@ -8,19 +8,19 @@
           Report Customer List
         </h2>
         <div
-          class="flex flex-wrap items-center gap-y-2 md:gap-x-6 space-y-4 md:space-y-0"
+          class="flex flex-wrap items-center gap-y-0 md:gap-x-6 space-y-4 md:space-y-0 text-black"
         >
           <div class="flex items-center space-x-3">
             <label for="account-select" class="font-medium">Branch:</label>
-            <select id="account-select" class="border rounded px-2 py-1">
+            <select id="account-select" class="border rounded px-2 py-1 text-gray-500">
               <option value="account1">Account 1</option>
               <option value="account2">Account 2</option>
               <option value="account3">Account 3</option>
             </select>
           </div>
           <div class="flex items-center space-x-3">
-            <label for="account-select" class="font-medium">Custom Type:</label>
-            <select id="account-select" class="border rounded px-2 py-1">
+            <label for="account-select" class="font-medium ">Custom Type:</label>
+            <select id="account-select" class="border rounded px-2 py-1 text-gray-500">
               <option value="account1">I</option>
               <option value="account2">C</option>
               <option value="account3">B</option>
