@@ -37,7 +37,19 @@ const router = createRouter({
     {
       path: '/report-customer-list',
       name: 'report-customer-list',
-      component: () => import('/src/views/customer/ReportCustomerList.vue'),
+      component: () => import('/src/views/report/ReportCustomerList.vue'),
+
+    },
+    {
+      path: '/admin/user/register',
+      name: 'admin-user-register',
+      component: () => import('/src/views/admin/UserRegister.vue'),
+
+    },
+    {
+      path: '/admin/user/list',
+      name: 'admin-user-list',
+      component: () => import('/src/views/admin/UserList.vue'),
 
     },
   ],

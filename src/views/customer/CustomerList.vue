@@ -19,57 +19,30 @@
                 STT
               </th>
               <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                Description
+                CIF
               </th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Amount</th>
-              <th class="border border-gray-300 px-2 sm:px-4 py-2">Balance</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2">Full Name</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2">Email</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2">Tel</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2">Edit</th>
+              <th class="border border-gray-300 px-2 sm:px-4 py-2">Delete</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">Deposit</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2">010010490</td>
               <td
                 class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
               >
-                + $1,000
+              Soukphasone Douangpanya
               </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-              <td
-                class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
-              >
-                + $1,000
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-              <td
-                class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
-              >
-                + $1,000
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2">soukphasone2001@gmail.com</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2">020 99110019</td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
+              <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
             </tr>
-            <tr>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">2</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                Withdrawal
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">
-                - $500
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">
-                - $500
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2 text-red-600">
-                - $500
-              </td>
-              <td class="border border-gray-300 px-2 sm:px-4 py-2">$4,500</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>

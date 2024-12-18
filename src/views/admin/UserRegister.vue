@@ -1,38 +1,15 @@
 <template>
   <main class="container mx-auto">
     <div class="bg-gray-100 flex items-center justify-center">
-      <div class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
+      <div
+        class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg"
+      >
         <h2
           class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800"
         >
-          Customer Information
+          User Information
         </h2>
         <form>
-          <!-- Branch List -->
-          <div class="mb-4">
-            <label
-              for="branchList"
-              class="block text-sm font-medium text-gray-700"
-              >Branch Registe</label
-            >
-            <select
-              id="branchList"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              required
-            >
-              <option value="" disabled>Select a branch</option>
-              <option
-                v-for="branch in branches"
-                :key="branch.id"
-                :value="branch.id"
-              >
-                {{ branch.name }}
-              </option>
-            </select>
-          </div>
-          <div class="text-lg font-bold mb-2 text-center text-gray-800">
-            Branch in FCC
-          </div>
           <!-- Name -->
           <div class="mb-4">
             <label for="name" class="block text-sm font-medium text-gray-700"
@@ -45,38 +22,6 @@
               placeholder="Enter your full name"
               required
             />
-          </div>
-
-          <!-- Email -->
-          <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
-              >Email Address</label
-            >
-            <input
-              type="email"
-              id="email"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-
-          <!-- Phone -->
-          <div class="mb-4">
-            <label for="phone" class="block text-sm font-medium text-gray-700"
-              >Phone Number</label
-            >
-            <input
-              type="tel"
-              id="phone"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your phone number"
-              required
-            />
-          </div>
-
-          <div class="text-lg font-bold mb-2 text-center text-gray-800">
-            Login Information
           </div>
           <!-- User name -->
           <div class="mb-4">
@@ -120,6 +65,50 @@
               id="confirmPassword"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your confirm password"
+              required
+            />
+          </div>
+          <!-- Role -->
+          <div class="mb-4">
+            <label for="role" class="block text-sm font-medium text-gray-700"
+              >Role</label
+            >
+            <select
+              id="role"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              required
+            >
+              <option value="" disabled selected>Select a role</option>
+              <option value="administrator">Administrator</option>
+              <option value="user">User</option>
+              <option value="authorize">Authorize</option>
+            </select>
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium text-gray-700"
+              >Tel</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              placeholder="Enter your email"
               required
             />
           </div>

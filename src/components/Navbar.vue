@@ -52,9 +52,9 @@
             @mouseover="showDropdown"
           >
             <li>
-              <a href="#" class="block w-[180px]">Register User</a>
+              <a href="/admin/user/register" class="block w-[180px]">Register User</a>
             </li>
-            <li><a href="#" class="block">User List</a></li>
+            <li><a href="/admin/user/list" class="block">User List</a></li>
             <li>
               <a href="#" class="block">Change Password Login</a>
             </li>

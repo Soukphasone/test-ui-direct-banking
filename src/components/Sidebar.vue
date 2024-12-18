@@ -63,12 +63,12 @@
               >
                 Authorize Customer
               </div>
-              <router-link
-                to="/"
+              <div
+                @click.prevent="navigate('reset-password-customer')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 Reset Password Customer
-              </router-link>
+              </div>
             </div>
           </div>
           <!-- Customer Report with Dropdown -->
@@ -138,24 +138,24 @@
               v-show="showAdminDropdown"
               class="absolute left-0 mt-1 w-full bg-white shadow-md rounded-md z-10"
             >
-              <router-link
-                to="/"
+              <div
+                @click.prevent="navigate('admin-user-register')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 Register User
-              </router-link>
-              <router-link
-                to="/"
+              </div>
+              <div
+                @click.prevent="navigate('admin-user-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 User List
-              </router-link>
-              <router-link
-                to="/"
+              </div>
+              <div
+                @click.prevent="navigate('change-password-login')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
                 Change Password Login
-              </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -182,12 +182,9 @@
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
-import { useRouterStore } from "../stores/routerStore";
 defineProps<{
   showSide: boolean;
-  navigate: (
-    value: "home" | "customer-register" | "customer-list" | "authorization-list" | "report-customer-list"
-  ) => Promise<void>;
+  navigate: (value: any) => Promise<void>;
 }>();
 const showCustomerDropdown = ref(false);
 const showReportDropdown = ref(false);

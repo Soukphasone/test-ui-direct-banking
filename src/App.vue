@@ -84,16 +84,7 @@ const toggleSideBar = (): void => {
   showSide.value = !showSide.value;
   hiddenContent.value = !showSide.value;
 };
-
-type RouteLink =
-  | "home"
-  | "customer-register"
-  | "customer-list"
-  | "authorization-list"
-  |"report-customer-list";
-
-const otherLink = async (value: RouteLink): Promise<void> => {
-  console.log("Value At APP:", value);
+const otherLink = async (value: any): Promise<void> => {
   switch (value) {
     case "home":
       await router.push("/");
@@ -109,6 +100,15 @@ const otherLink = async (value: RouteLink): Promise<void> => {
       break;
     case "report-customer-list":
       await router.push("/authorization/list");
+      break;
+    case "reset-password-customer":
+      await router.push("/reset-password-customer");
+      break;
+    case "admin-user-register":
+      await router.push("/admin/user/register");
+      break;
+    case "admin-user-list":
+      await router.push("/admin/user/list");
       break;
   }
   // Update visibility state
