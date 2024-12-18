@@ -12,7 +12,7 @@
         <form>
           <!-- Name -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium"
+            <label for="name" class="block text-sm font-medium text-black"
               >Full Name</label
             >
             <input
@@ -25,20 +25,20 @@
           </div>
           <!-- User name -->
           <div class="mb-4">
-            <label for="username" class="block text-sm font-medium"
+            <label for="username" class="block text-sm font-medium text-black"
               >User name</label
             >
             <input
               type="tel"
               id="username"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 "
               placeholder="Enter your user name"
               required
             />
           </div>
           <!-- Password -->
           <div class="mb-4">
-            <label for="password" class="block text-sm font-medium"
+            <label for="password" class="block text-sm font-medium text-black"
               >Password</label
             >
             <input
@@ -51,7 +51,7 @@
           </div>
           <!-- Confirm pass -->
           <div class="mb-4">
-            <label for="confirmPassword" class="block text-sm font-medium"
+            <label for="confirmPassword" class="block text-sm font-medium text-black"
               >confirm Password</label
             >
             <input
@@ -79,7 +79,7 @@
 
           <!-- Phone -->
           <div class="mb-4">
-            <label for="phone" class="block text-sm font-medium"
+            <label for="phone" class="block text-sm font-medium text-black"
               >Tel</label
             >
             <input
@@ -93,7 +93,7 @@
 
           <!-- Email -->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium"
+            <label for="email" class="block text-sm font-medium text-black"
               >Email Address</label
             >
             <input

@@ -12,7 +12,7 @@
           <div class="mb-4">
             <label
               for="branchList"
-              class="block text-sm font-medium"
+              class="block text-sm font-medium text-black"
               >Branch Registe</label
             >
             <select
@@ -30,12 +30,12 @@
               </option>
             </select>
           </div>
-          <div class="text-lg font-bold mb-2 text-center">
+          <div class="text-lg font-bold mb-2 text-center text-black">
             Branch in FCC
           </div>
           <!-- Name -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium"
+            <label for="name" class="block text-sm font-medium text-black"
               >Full Name</label
             >
             <input
@@ -49,7 +49,7 @@
 
           <!-- Email -->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium"
+            <label for="email" class="block text-sm font-medium text-black"
               >Email Address</label
             >
             <input
@@ -63,7 +63,7 @@
 
           <!-- Phone -->
           <div class="mb-4">
-            <label for="phone" class="block text-sm font-medium text-gray-700"
+            <label for="phone" class="block text-sm font-medium text-black"
               >Phone Number</label
             >
             <input
@@ -75,14 +75,14 @@
             />
           </div>
 
-          <div class="text-lg font-bold mb-2 text-center">
+          <div class="text-lg font-bold mb-2 text-center text-black">
             Login Information
           </div>
           <!-- User name -->
           <div class="mb-4">
             <label
               for="username"
-              class="block text-sm font-medium"
+              class="block text-sm font-medium text-black"
               >User name</label
             >
             <input
@@ -97,7 +97,7 @@
           <div class="mb-4">
             <label
               for="password"
-              class="block text-sm font-medium"
+              class="block text-sm font-medium text-black"
               >Password</label
             >
             <input
@@ -112,7 +112,7 @@
           <div class="mb-4">
             <label
               for="confirmPassword"
-              class="block text-sm font-medium"
+              class="block text-sm font-medium text-black"
               >confirm Password</label
             >
             <input
