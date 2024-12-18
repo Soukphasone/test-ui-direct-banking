@@ -19,7 +19,7 @@
           <!-- Customer Account with Dropdown -->
           <div class="relative">
             <div
-              @click="showCustomerDropdown = !showCustomerDropdown"
+            @click="showDropdown('customer')"
               class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Customer Account</div>
@@ -74,7 +74,7 @@
           <!-- Customer Report with Dropdown -->
           <div class="relative">
             <div
-              @click="showReportDropdown = !showReportDropdown"
+            @click="showDropdown('report')"
               class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Report</div>
@@ -112,7 +112,7 @@
 
           <div class="relative">
             <div
-              @click="showAdminDropdown = !showAdminDropdown"
+              @click="showDropdown('admin')"
               class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Admin</div>
@@ -189,6 +189,26 @@ defineProps<{
 const showCustomerDropdown = ref(false);
 const showReportDropdown = ref(false);
 const showAdminDropdown = ref(false);
+const showDropdown = async (value: any) => {
+  switch (value) {
+    case "customer":
+    showCustomerDropdown.value = !showCustomerDropdown.value;
+    showAdminDropdown.value = false;
+    showReportDropdown.value = false;
+      break;
+    case "report":
+    showReportDropdown.value = !showReportDropdown.value;
+    showCustomerDropdown.value = false;
+    showAdminDropdown.value = false;
+      break;
+    case "admin":
+    showAdminDropdown.value = !showAdminDropdown.value;
+    showCustomerDropdown.value = false;
+    showReportDropdown.value = false;
+      break;
+  }
+
+};
 </script>
 <style scoped>
 /* Optional: Add smooth dropdown animation */
