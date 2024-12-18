@@ -17,7 +17,7 @@
           <div class="flex items-center space-x-3">
             <label for="account-select" class="font-medium">Account:</label>
             <select id="account-select" class="border rounded px-2 py-1 text-gray-500">
-              <option value="" disabled selected>Select account nam</option>
+              <option value="" disabled selected>Select account name</option>
               <option value="account1">Account 1</option>
               <option value="account2">Account 2</option>
               <option value="account3">Account 3</option>
