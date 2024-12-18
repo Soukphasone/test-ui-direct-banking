@@ -5,14 +5,14 @@
         class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg"
       >
         <h2
-          class="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800"
+          class="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6"
         >
           User Information
         </h2>
         <form>
           <!-- Name -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700"
+            <label for="name" class="block text-sm font-medium"
               >Full Name</label
             >
             <input
@@ -25,9 +25,7 @@
           </div>
           <!-- User name -->
           <div class="mb-4">
-            <label
-              for="username"
-              class="block text-sm font-medium text-gray-700"
+            <label for="username" class="block text-sm font-medium"
               >User name</label
             >
             <input
@@ -40,9 +38,7 @@
           </div>
           <!-- Password -->
           <div class="mb-4">
-            <label
-              for="password"
-              class="block text-sm font-medium text-gray-700"
+            <label for="password" class="block text-sm font-medium"
               >Password</label
             >
             <input
@@ -55,9 +51,7 @@
           </div>
           <!-- Confirm pass -->
           <div class="mb-4">
-            <label
-              for="confirmPassword"
-              class="block text-sm font-medium text-gray-700"
+            <label for="confirmPassword" class="block text-sm font-medium"
               >confirm Password</label
             >
             <input
@@ -70,12 +64,10 @@
           </div>
           <!-- Role -->
           <div class="mb-4">
-            <label for="role" class="block text-sm font-medium text-black"
-              >Role</label
-            >
+            <label for="role" class="block text-sm font-medium">Role</label>
             <select
               id="role"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-black"
+              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-400"
               required
             >
               <option value="" disabled selected>Select a role</option>
@@ -87,7 +79,7 @@
 
           <!-- Phone -->
           <div class="mb-4">
-            <label for="phone" class="block text-sm font-medium text-gray-700"
+            <label for="phone" class="block text-sm font-medium"
               >Tel</label
             >
             <input
@@ -101,7 +93,7 @@
 
           <!-- Email -->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
+            <label for="email" class="block text-sm font-medium"
               >Email Address</label
             >
             <input
@@ -134,7 +126,6 @@
   </main>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style></style>

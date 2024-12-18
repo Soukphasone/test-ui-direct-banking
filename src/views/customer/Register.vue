@@ -3,7 +3,7 @@
     <div class="bg-gray-100 flex items-center justify-center">
       <div class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
         <h2
-          class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800"
+          class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 "
         >
           Customer Information
         </h2>
@@ -12,12 +12,12 @@
           <div class="mb-4">
             <label
               for="branchList"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium"
               >Branch Registe</label
             >
             <select
               id="branchList"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-black"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-500"
               required
             >
               <option value="" disabled>Select a branch</option>
@@ -30,18 +30,18 @@
               </option>
             </select>
           </div>
-          <div class="text-lg font-bold mb-2 text-center text-gray-800">
+          <div class="text-lg font-bold mb-2 text-center">
             Branch in FCC
           </div>
           <!-- Name -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700"
+            <label for="name" class="block text-sm font-medium"
               >Full Name</label
             >
             <input
               type="text"
               id="name"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your full name"
               required
             />
@@ -49,13 +49,13 @@
 
           <!-- Email -->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700"
+            <label for="email" class="block text-sm font-medium"
               >Email Address</label
             >
             <input
               type="email"
               id="email"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your email"
               required
             />
@@ -69,26 +69,26 @@
             <input
               type="tel"
               id="phone"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your phone number"
               required
             />
           </div>
 
-          <div class="text-lg font-bold mb-2 text-center text-gray-800">
+          <div class="text-lg font-bold mb-2 text-center">
             Login Information
           </div>
           <!-- User name -->
           <div class="mb-4">
             <label
               for="username"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium"
               >User name</label
             >
             <input
               type="tel"
               id="username"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your user name"
               required
             />
@@ -97,13 +97,13 @@
           <div class="mb-4">
             <label
               for="password"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium"
               >Password</label
             >
             <input
               type="tel"
               id="password"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your password"
               required
             />
@@ -112,13 +112,13 @@
           <div class="mb-4">
             <label
               for="confirmPassword"
-              class="block text-sm font-medium text-gray-700"
+              class="block text-sm font-medium"
               >confirm Password</label
             >
             <input
               type="tel"
               id="confirmPassword"
-              class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
+              class="border border-blue-100 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
               placeholder="Enter your confirm password"
               required
             />
