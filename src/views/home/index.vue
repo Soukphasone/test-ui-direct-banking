@@ -62,28 +62,27 @@
       <tbody>
         <tr>
           <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">Deposit</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
           <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
-            + $1,000
+            
           </td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
           <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
-            + $1,000
           </td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
           <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
-            + $1,000
           </td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">$5,000</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
         </tr>
       </tbody>
     </table>
-    <div class="flex justify-center py-4 sm:py-2">
+  
+  </div>
+  <div class="flex justify-center py-4 sm:py-2">
       <el-button type="primary">Refresh</el-button>
       <el-button type="primary">Authorize</el-button>
     </div>
-  </div>
 </div>
     </div>
   </main>
