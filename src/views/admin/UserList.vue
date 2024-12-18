@@ -11,7 +11,7 @@
         </h2>
         <div class="mt-4 overflow-x-auto">
           <table
-            class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
+            class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base text-black"
           >
             <thead>
               <tr class="bg-gray-100">

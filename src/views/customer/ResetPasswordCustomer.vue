@@ -10,7 +10,7 @@
         <div
           class="flex flex-wrap items-center md:gap-x-6 space-y-4 md:space-y-0"
         >
-          <div class="flex items-center space-x-3">
+          <div class="flex items-center space-x-3 text-black">
             <label for="from-date" class="font-medium">User Name:</label>
             <input type="text" id="" class="border rounded px-2 py-1" />
           </div>

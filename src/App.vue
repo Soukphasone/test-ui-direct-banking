@@ -54,7 +54,7 @@
             </svg>
           </div>
         </div>
-        <div class="bg-gray-50 p-[20px]" v-show="hiddenContent">
+        <div class="bg-gray-50 p-[10px]" v-show="hiddenContent">
           <div class="h-full min-h-screen">
             <RouterView />
           </div>
