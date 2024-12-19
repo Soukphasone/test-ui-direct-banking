@@ -15,7 +15,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Nav Bar */
 nav {
   background-image: url("@/assets/img/Direct-banking-lvb_07.jpg");
@@ -154,14 +153,16 @@ a:hover {
 
 }
 .flag-icon-mb {
-  width: 20px;
+  width: 25px;
   height: 15px;
+  border: 1px solid rgb(193, 193, 193);
+
 }
 .bt-mb .flag-bt {
   width: 20px;
   height: 20px;
-  margin: 1px 0 0 1px;
-  border: 0.2px solid gray;
+  margin: 1.8px 0 0 1.6px;
+  border: 1px solid gray;
 }
 .bt-mb img{
   border-radius: 50%;

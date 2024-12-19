@@ -80,40 +80,6 @@
       <!-- Right section -->
       <div class="flex space-x-4">
         <changelanguage />
-        <!-- <div class="custom-select">
-          <button @click="toggleDropdown">
-            <span v-if="check === 'la'">
-              <img src="@/assets/img/laos-flag.png" alt="flag" class="flag-bt"
-            /></span>
-            <span v-else-if="check === 'en'">
-              <img
-                src="@/assets/img/united-states-flag-icon.png"
-                alt="flag"
-                class="flag-bt"
-            /></span>
-            <span v-else>
-              <img
-                src="@/assets/img/vietnam-flag.png"
-                alt="flag"
-                class="flag-bt"
-            /></span>
-          </button>
-          <ul v-if="isOpen" class="dropdown">
-            <li
-              v-for="option in options"
-              :key="option.value"
-              @click="selectOption(option.value)"
-            >
-              <img
-                :src="getImagePath(option.img)"
-                alt="flag"
-                class="flag-icon"
-              />
-
-             <span class="hidden sm:block"> {{ option.language }}</span>
-            </li>
-          </ul>
-        </div> -->
         <a href="#" class="py-2 px-2">
           <img
             src="@/assets/icons/icon-exit-white.png"
@@ -125,54 +91,10 @@
   </nav>
 </template>
 <script setup>
-import { ref, watch, defineAsyncComponent } from "vue";
-import { useI18n } from "vue-i18n";
-import { currentLanguage } from "../i18n";
+import { ref, defineAsyncComponent } from "vue";
+
 const Changelanguage = defineAsyncComponent(() =>
   import("./ChangeLanguage.vue")
 );
-const { locale } = useI18n();
-const check = ref(currentLanguage.value);
-// Watch for changes in the global language state and update the i18n locale
-watch(currentLanguage, (newLanguage) => {
-  locale.value = newLanguage;
-  check.value = newLanguage;
-});
 const isDropdownVisible = ref(true);
-const isOpen = ref(false);
-const selected = ref(currentLanguage.value);
-const options = ref([
-  {
-    value: "en",
-    language: "US (EN)",
-    img: "united-states-flag-icon.png",
-  },
-  {
-    value: "la",
-    language: "ລາວ (LA)",
-    img: "laos-flag.png",
-  },
-  {
-    value: "vn",
-    language: "Tiếng việt (VN)",
-    img: "vietnam-flag.png",
-  },
-]);
-const showDropdown = () => {
-  isDropdownVisible.value = true;
-};
-
-const toggleDropdown = () => {
-  isOpen.value = !isOpen.value;
-};
-
-const selectOption = (option) => {
-  selected.valueOf = option;
-  currentLanguage.value = option;
-  isOpen.value = false;
-  localStorage.setItem("language", option);
-};
-const getImagePath = (img) => {
-  return new URL(`/src/assets/img/${img}`, import.meta.url).href;
-};
 </script>

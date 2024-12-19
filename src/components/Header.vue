@@ -1,5 +1,5 @@
 <template>
-     <header class="bg-gray-100">
+     <header class="hidden sm:block bg-gray-100">
       <div class="w-full max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto">
         <img
           src="/src/assets/img/Direct-banking-lvb_01.jpg"

@@ -74,7 +74,6 @@ import { useI18n } from "vue-i18n";
 import { currentLanguage } from "../i18n";
 const { locale } = useI18n();
 const check = ref(currentLanguage.value);
-// Watch for changes in the global language state and update the i18n locale
 watch(currentLanguage, (newLanguage) => {
   locale.value = newLanguage;
   check.value = newLanguage;
