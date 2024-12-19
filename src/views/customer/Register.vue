@@ -7,20 +7,25 @@
         <h2
           class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-black"
         >
-          Customer Information
+          {{ $t("customer_information") }}
         </h2>
         <form>
           <!-- Branch List -->
           <div class="mb-4">
-            <label for="branch_ist" class="block text-sm font-medium text-black"
-              >Branch Registers</label
+            <label
+              for="branch_ist"
+              class="block text-sm font-medium text-black"
             >
+              {{ $t("branch_registers") }}
+            </label>
             <select
               id="branch_list"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-500"
               required
             >
-              <option value="" disabled selected>Select a branch</option>
+              <option value="" disabled selected>
+                {{ $t("select_branch") }}
+              </option>
               <option
                 v-for="branch in branches"
                 :key="branch.id"
@@ -31,76 +36,75 @@
             </select>
           </div>
           <div class="text-lg font-bold mb-2 text-center text-black">
-            Branch in FCC
+            {{ $t("branch_in") }}
           </div>
           <!-- Name -->
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-black"
-              >Full Name</label
-            >
+            <label for="name" class="block text-sm font-medium text-black">
+              {{ $t("full_name") }}
+            </label>
             <input
               type="text"
               id="name"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your full name"
+              :placeholder="$t('enter_full_name')"
               required
             />
           </div>
 
           <!-- Email -->
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-black"
-              >Email Address</label
-            >
+            <label for="email" class="block text-sm font-medium text-black">
+              {{ $t("email") }}
+            </label>
             <input
               type="email"
               id="email"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your email"
+              :placeholder="$t('enter_email')"
               required
             />
           </div>
 
           <!-- Phone -->
           <div class="mb-4">
-            <label for="phone" class="block text-sm font-medium text-black"
-              >Tel</label
-            >
+            <label for="phone" class="block text-sm font-medium text-black">
+              {{ $t("tel") }}
+            </label>
             <input
               type="tel"
               id="phone"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your phone number"
-              required
+              :placeholder="$t('enter_tel')"
             />
           </div>
 
           <div class="text-lg font-bold mb-2 text-center text-black">
-            Login Information
+            {{ $t("login_information") }}
           </div>
           <!-- User name -->
           <div class="mb-4">
-            <label for="username" class="block text-sm font-medium text-black"
-              >User name</label
-            >
+            <label for="username" class="block text-sm font-medium text-black">
+              {{ $t("user_name") }}
+            </label>
             <input
               type="text"
               id="username"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your user name"
+              :placeholder="$t('enter_name')"
               required
             />
           </div>
           <!-- Password -->
           <div class="mb-4">
-            <label for="password" class="block text-sm font-medium text-black"
-              >Password</label
-            >
+            <label for="password" class="block text-sm font-medium text-black">
+              {{ $t("password") }}
+            </label>
             <input
               type="text"
               id="password"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your password"
+              :placeholder="$t('enter_password')"
               required
             />
           </div>
@@ -109,13 +113,14 @@
             <label
               for="confirmPassword"
               class="block text-sm font-medium text-black"
-              >confirm Password</label
             >
+              {{ $t("confirm_password") }}
+            </label>
             <input
               type="text"
               id="confirmPassword"
               class="border border-blue-100 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your confirm password"
+              :placeholder="$t('enter_confirm_password')"
               required
             />
           </div>
@@ -126,13 +131,13 @@
               type="submit"
               class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-400 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Register
+              {{ $t("register") }}
             </button>
             <button
               type="submit"
               class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-400 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
-              Cancel
+              {{ $t("cancel") }}
             </button>
           </div>
         </form>

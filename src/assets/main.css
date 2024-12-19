@@ -1,8 +1,8 @@
 @import './base.css';
 
 @font-face {
-  font-family: 'Noto Sans Lao';
-  src: url('/src/assets/fonts/NotoSansLao-Regular.ttf') format('truetype');
+  font-family: 'NotoSansLao';
+  src: url('../assets/fonts/NotoSansLao-Regular.ttf') format('truetype');
 }
 
 #app {
@@ -24,7 +24,6 @@ nav {
   background-repeat: no-repeat;
   border-top: 4px solid white;
   color: white;
-  
 }
 /*  */
 .ul {
@@ -66,7 +65,8 @@ a:hover {
   position: relative;
   display: inline-block;
 }
-.custom-select button {
+/* pc */
+.custom-select .bt-pc {
   background: #f0f0f0;
   /* border: 2px solid black; */
   padding: 5px 5px;
@@ -80,7 +80,8 @@ a:hover {
   margin-top: 5px;
 }
 
-.dropdown {
+
+.custom-select .dropdown-pc {
   position: absolute;
   top: 100%;
   left: 0;
@@ -93,8 +94,9 @@ a:hover {
   color: black;
   z-index: 100;
 }
-.dropdown li {
-  padding: 5px 10px 5px 5px;
+
+.dropdown-pc li {
+  padding: 5px 5px 5px 2px;
   /* cursor: pointer; */
   font-size: 10px;
   display: flex;
@@ -102,15 +104,79 @@ a:hover {
 
 }
 
-.dropdown li:hover {
+.dropdown-pc li:hover {
   background: #eee;
 }
-.flag-icon {
+.flag-icon-pc {
   width: 20px;
   height: 15px;
 }
-.flag-bt {
+
+.bt-pc .flag-bt {
   width: 20px;
   height: 15px;
   margin: 3px 0 0 2px;
+}
+
+/* mobile */
+.custom-select .bt-mb {
+  background: #f0f0f0;
+  /* border: 2px solid black; */
+  padding: 5px 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  color: black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgb(67, 5, 5);
+}
+.custom-select .dropdown-mb {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  /* padding: 5px 10px 5px 5px; */
+  margin: 0;
+  width: auto;
+  color: black;
+  z-index: 100;
+}
+.dropdown-mb li {
+  padding: 5px 7px 5px 7px;
+  /* cursor: pointer; */
+  font-size: 10px;
+  display: flex;
+  gap: 10px;
+
+}
+.flag-icon-mb {
+  width: 20px;
+  height: 15px;
+}
+.bt-mb .flag-bt {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 0 1px;
+  border: 0.2px solid gray;
+}
+.bt-mb img{
+  border-radius: 50%;
+}
+.dropdown-mb li:hover {
+  background: #eee;
+}
+
+/* Nav mobile */
+
+.nav-mobile{
+  background-image: url("@/assets/img/Direct-banking-lvb_07.jpg");
+  background-size: cover; /* Scales the image to cover the navbar area */
+  background-position: center; /* Centers the image in the navbar */
+  background-repeat: no-repeat;
+  border-top: 4px solid white;
+  color: white;
 }

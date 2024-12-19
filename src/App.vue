@@ -10,48 +10,55 @@
       <!-- Side bar -->
       <sidebar :showSide="showSide" :navigate="otherLink" />
       <div class="w-full h-full bg-gray-100">
-        <div
-          class="hidden max-sm:block h-[50px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 border-b"
-        >
-          <!-- Hamburger menu -->
-          <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
-            <svg
-              width="40px"
-              height="40px"
-              viewBox="0 0 24.00 24.00"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M5 7H19"
-                  stroke="#000000"
-                  stroke-width="3"
+        <div class="hidden max-sm:block nav-mobile ">
+          <div
+            class="h-[60px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
+          >
+            <!-- Hamburger menu -->
+            <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
+              <svg
+                width="40px"
+                height="40px"
+                viewBox="0 0 24.00 24.00"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M5 12L19 12"
-                  stroke="#000000"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M5 17L19 17"
-                  stroke="#000000"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </g>
-            </svg>
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M5 7H19"
+                    stroke="#000000"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M5 12L19 12"
+                    stroke="#000000"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M5 17L19 17"
+                    stroke="#000000"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <!--Button change language -->
+            <div class="space-x-4 px-4">
+            <changelanguage />
+            </div>
           </div>
         </div>
         <div class="bg-gray-50 p-[10px]" v-show="hiddenContent">
@@ -71,9 +78,11 @@ import { RouterView, useRouter } from "vue-router";
 
 // Import components asynchronously
 const Navbar = defineAsyncComponent(() => import("./components/Navbar.vue"));
+const Changelanguage = defineAsyncComponent(() => import("./components/ChangeLanguage.vue"));
 const Sidebar = defineAsyncComponent(() => import("./components/Sidebar.vue"));
 const Header = defineAsyncComponent(() => import("./components/Header.vue"));
 const Footer = defineAsyncComponent(() => import("./components/Footer.vue"));
+
 
 const showSide = ref<boolean>(false);
 const hiddenContent = ref<boolean>(true);

@@ -5,38 +5,40 @@
     <div class="container mx-auto py-3 px-5 flex items-center justify-between">
       <!-- Left section -->
       <ul class="flex space-x-6 z-custom-100">
-        <li><router-link to="/" class="text-white">Home</router-link></li>
+        <li>
+          <router-link to="/" class="text-white">{{ $t("home") }}</router-link>
+        </li>
         <li class="relative group">
-          <a class="text-white">Customer Account</a>
+          <a class="text-white">{{ $t("customer_account") }}</a>
           <ul
             v-show="isDropdownVisible"
             class="absolute bg-white border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
             @mouseover="showDropdown"
           >
             <li>
-              <router-link to="/customer/register" class="block w-[200px]"
-                >Register</router-link
-              >
+              <router-link to="/customer/register" class="block w-[200px]">{{
+                $t("register")
+              }}</router-link>
             </li>
             <li>
-              <router-link to="/customer/list" class="block"
-                >Customer List</router-link
-              >
+              <router-link to="/customer/list" class="block">{{
+                $t("customer_list")
+              }}</router-link>
             </li>
             <li>
-              <router-link to="/authorization/list" class="block"
-                >Authorize Customer</router-link
-              >
+              <router-link to="/authorization/list" class="block">{{
+                $t("authorize_customer")
+              }}</router-link>
             </li>
             <li>
-              <router-link to="/reset-password-customer" class="block"
-                >Reset Password Customer</router-link
-              >
+              <router-link to="/reset-password-customer" class="block">{{
+                $t("reset_pass_customer")
+              }}</router-link>
             </li>
           </ul>
         </li>
         <li class="relative group">
-          <a class="text-white">Report</a>
+          <a class="text-white">{{ $t("report") }}</a>
           <ul
             v-show="isDropdownVisible"
             class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
@@ -44,50 +46,54 @@
             @mouseleave="hideDropdown"
           >
             <li>
-              <router-link to="/report-customer-list" class="block w-[160px]"
-                >Report Customer List</router-link
-              >
+              <router-link to="/report-customer-list" class="block w-[160px]">{{
+                $t("report_customer_list")
+              }}</router-link>
             </li>
           </ul>
         </li>
         <li class="relative group">
-          <a href="#" class="text-white">Admin</a>
+          <a href="#" class="text-white">{{ $t("admin") }}</a>
           <ul
             v-show="isDropdownVisible"
             class="absolute bg-white text-black border border-gray-300 rounded shadow-md p-2 space-y-2 hidden group-hover:block"
             @mouseover="showDropdown"
           >
             <li>
-              <router-link to="/admin/user/register" class="block w-[180px]"
-                >Register User</router-link
-              >
+              <router-link to="/admin/user/register" class="block w-[180px]">{{
+                $t("register")
+              }}</router-link>
             </li>
-            <li><router-link to="/admin/user/list" class="block">User List</router-link></li>
             <li>
-              <router-link to="/change-password" class="block">Change Password Login</router-link>
+              <router-link to="/admin/user/list" class="block">{{
+                $t("user_list")
+              }}</router-link>
+            </li>
+            <li>
+              <router-link to="/change-password" class="block">{{
+                $t("change_password")
+              }}</router-link>
             </li>
           </ul>
         </li>
       </ul>
       <!-- Right section -->
       <div class="flex space-x-4">
-        <div class="custom-select">
+        <changelanguage />
+        <!-- <div class="custom-select">
           <button @click="toggleDropdown">
             <span v-if="check === 'la'">
-              <img
-                src="@/assets/img/laos-flag.png"
-                alt="flag"
-                class="flag-icon"
+              <img src="@/assets/img/laos-flag.png" alt="flag" class="flag-bt"
             /></span>
             <span v-else-if="check === 'en'">
               <img
                 src="@/assets/img/united-states-flag-icon.png"
                 alt="flag"
-                class="flag-icon"
+                class="flag-bt"
             /></span>
             <span v-else>
               <img
-                src="@/assets/img/united-states-flag-icon.png"
+                src="@/assets/img/vietnam-flag.png"
                 alt="flag"
                 class="flag-bt"
             /></span>
@@ -104,10 +110,10 @@
                 class="flag-icon"
               />
 
-              {{ option.language }}
+             <span class="hidden sm:block"> {{ option.language }}</span>
             </li>
           </ul>
-        </div>
+        </div> -->
         <a href="#" class="py-2 px-2">
           <img
             src="@/assets/icons/icon-exit-white.png"
@@ -119,10 +125,22 @@
   </nav>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, watch, defineAsyncComponent } from "vue";
+import { useI18n } from "vue-i18n";
+import { currentLanguage } from "../i18n";
+const Changelanguage = defineAsyncComponent(() =>
+  import("./ChangeLanguage.vue")
+);
+const { locale } = useI18n();
+const check = ref(currentLanguage.value);
+// Watch for changes in the global language state and update the i18n locale
+watch(currentLanguage, (newLanguage) => {
+  locale.value = newLanguage;
+  check.value = newLanguage;
+});
 const isDropdownVisible = ref(true);
 const isOpen = ref(false);
-const selected = "en";
+const selected = ref(currentLanguage.value);
 const options = ref([
   {
     value: "en",
@@ -144,16 +162,13 @@ const showDropdown = () => {
   isDropdownVisible.value = true;
 };
 
-// const hideDropdown = () => {
-//   isDropdownVisible.value = false;
-// };
 const toggleDropdown = () => {
   isOpen.value = !isOpen.value;
 };
 
 const selectOption = (option) => {
   selected.valueOf = option;
-  //   currentLanguage.value = option;
+  currentLanguage.value = option;
   isOpen.value = false;
   localStorage.setItem("language", option);
 };
@@ -161,5 +176,3 @@ const getImagePath = (img) => {
   return new URL(`/src/assets/img/${img}`, import.meta.url).href;
 };
 </script>
-
-<style></style>

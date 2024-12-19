@@ -7,16 +7,21 @@
         <h2
           class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center text-center"
         >
-          WELCOME TO LAOVIETBANK DIRECT BANKING
+          {{ $t("welcome") }}
         </h2>
-        <div class="text-blue-900 mb-6">Name: Admin</div>
+        <div class="text-blue-900 mb-6">{{ $t("name") }}: Admin</div>
         <!-- Search Section -->
         <div
           class="flex flex-wrap items-center text-black md:gap-x-6 space-y-4 md:space-y-0"
         >
           <div class="flex items-center space-x-3">
-            <label for="account-select" class="font-medium">Account:</label>
-            <select id="account-select" class="border rounded px-2 py-1 text-gray-500">
+            <label for="account-select" class="font-medium"
+              >{{ $t("account") }}:</label
+            >
+            <select
+              id="account-select"
+              class="border rounded px-2 py-1 text-gray-500"
+            >
               <option value="" disabled selected>Select account name</option>
               <option value="account1">Account 1</option>
               <option value="account2">Account 2</option>
@@ -24,7 +29,9 @@
             </select>
           </div>
           <div class="flex items-center space-x-3">
-            <label for="from-date" class="font-medium">From Date:</label>
+            <label for="from-date" class="font-medium"
+              >{{ $t("from_date") }}:</label
+            >
             <input
               type="date"
               id="from-date"
@@ -32,7 +39,9 @@
             />
           </div>
           <div class="flex items-center space-x-3">
-            <label for="to-date" class="font-medium">To Date:</label>
+            <label for="to-date" class="font-medium"
+              >{{ $t("to_date") }}:</label
+            >
             <input type="date" id="to-date" class="border rounded px-2 py-1" />
           </div>
           <div class="flex items-center space-x-3">
@@ -40,10 +49,10 @@
           </div>
         </div>
 
-        <div class="mb-6 text-black">Balance:</div>
+        <div class="mb-6 py-6 text-black">{{ $t("balance") }}:</div>
 
         <!-- Results Section -->
-        <div class="mt-4 overflow-x-auto text-black">
+        <!-- <div class="mt-4 overflow-x-auto text-black">
           <table
             class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
           >
@@ -97,7 +106,9 @@
                 >
                   012INTHAVA
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">Add New User</td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  Add New User
+                </td>
                 <td class="border border-gray-300 px-2 sm:px-4 py-2">U</td>
               </tr>
             </tbody>
@@ -106,7 +117,7 @@
         <div class="flex justify-center py-4 sm:py-2">
           <el-button type="primary">Refresh</el-button>
           <el-button type="primary">Authorize</el-button>
-        </div>
+        </div> -->
       </div>
     </div>
   </main>
