@@ -175,9 +175,9 @@ a:hover {
 
 .nav-mobile{
   width: 100%;
-  /* height: auto; */
+  height: 65px;
   background-image: url("@/assets/img/Direct-banking-lvb_01.jpg");
   background-size: cover;
-  /* background-position: center; */
+  /* background-position: left; */
   background-repeat: no-repeat;
 }
