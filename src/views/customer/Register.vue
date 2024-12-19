@@ -1,7 +1,9 @@
 <template>
   <main class="container mx-auto">
     <div class="bg-gray-100 flex items-center justify-center">
-      <div class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
+      <div
+        class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full max-w-lg"
+      >
         <h2
           class="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-black"
         >
@@ -10,13 +12,11 @@
         <form>
           <!-- Branch List -->
           <div class="mb-4">
-            <label
-              for="branchList"
-              class="block text-sm font-medium text-black"
-              >Branch Registe</label
+            <label for="branch_ist" class="block text-sm font-medium text-black"
+              >Branch Registers</label
             >
             <select
-              id="branchList"
+              id="branch_list"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2 text-gray-500"
               required
             >
@@ -64,7 +64,7 @@
           <!-- Phone -->
           <div class="mb-4">
             <label for="phone" class="block text-sm font-medium text-black"
-              >Phone Number</label
+              >Tel</label
             >
             <input
               type="tel"
@@ -80,9 +80,7 @@
           </div>
           <!-- User name -->
           <div class="mb-4">
-            <label
-              for="username"
-              class="block text-sm font-medium text-black"
+            <label for="username" class="block text-sm font-medium text-black"
               >User name</label
             >
             <input
@@ -95,9 +93,7 @@
           </div>
           <!-- Password -->
           <div class="mb-4">
-            <label
-              for="password"
-              class="block text-sm font-medium text-black"
+            <label for="password" class="block text-sm font-medium text-black"
               >Password</label
             >
             <input

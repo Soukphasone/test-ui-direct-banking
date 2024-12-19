@@ -8,7 +8,7 @@
           Report Customer List
         </h2>
         <div
-          class="flex flex-wrap items-center gap-y-0 md:gap-x-6 space-y-4 md:space-y-0 text-black"
+          class="flex flex-wrap items-center sm:gap-y-4 md:gap-x-6 space-y-4 md:space-y-0 text-black"
         >
           <div class="flex items-center space-x-3">
             <label for="account-select" class="font-medium">Branch:</label>
