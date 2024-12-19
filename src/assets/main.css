@@ -174,10 +174,10 @@ a:hover {
 /* Nav mobile */
 
 .nav-mobile{
-  background-image: url("@/assets/img/Direct-banking-lvb_07.jpg");
-  background-size: cover; /* Scales the image to cover the navbar area */
-  background-position: center; /* Centers the image in the navbar */
+  width: 100%;
+  /* height: auto; */
+  background-image: url("@/assets/img/Direct-banking-lvb_01.jpg");
+  background-size: cover;
+  /* background-position: center; */
   background-repeat: no-repeat;
-  border-top: 4px solid white;
-  color: white;
 }
