@@ -12,7 +12,7 @@
       <div class="w-full h-full bg-gray-100">
         <div class="hidden max-sm:block nav-mobile">
           <div
-            class="h-[89px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
+            class="h-[80px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
           >
             <!-- Hamburger menu -->
             <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
@@ -56,14 +56,10 @@
             </div>
 
             <!--Button change language -->
-            <div class="">
-              <div
-                class="h-[55px]"
-              >
-                <!-- <img src="@/assets/img/Direct-banking-lvb_03.jpg" alt="logo" class="h-[50px]"/> -->
-              </div>
+            <div class="img-nav-mb">
+              <img src="@/assets/img/LVB.png" alt="nav-mb" class="h-[40px]">
             </div>
-            <div class="space-x-4 px-0">
+            <div class="space-x-4 px-4">
               <changelanguage />
             </div>
           </div>
