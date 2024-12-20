@@ -49,7 +49,9 @@
                 <td class="border border-gray-300 px-2 sm:px-4 py-2">
                   {{ customer.accountNumber }}
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+                <td
+                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
+                >
                   {{ customer.fullname }}
                 </td>
                 <td class="border border-gray-300 px-2 sm:px-4 py-2">
@@ -76,6 +78,7 @@
           <pagination
             :totalItems="customerList.length"
             :itemsPerPage="itemsPerPage"
+            :visiblePages="4"
             v-model="currentPage"
           />
         </div>
@@ -85,9 +88,9 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-import { customerList } from '@/constant/dataTest';
-import Pagination from '@/components/Pagination.vue';
+import { ref, computed } from "vue";
+import { customerList } from "@/constant/dataTest";
+import Pagination from "@/components/Pagination.vue";
 
 const currentPage = ref(1);
 const itemsPerPage = 5;
