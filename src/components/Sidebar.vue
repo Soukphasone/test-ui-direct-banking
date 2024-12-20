@@ -3,7 +3,7 @@
     v-if="showSide"
     class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
   >
-    <div class="h-[calc(100vh-50px)] bg-gray-100 py-[20px]">
+    <div class="h-[calc(100vh-50px)] bg-gray-50 py-[20px]">
       <div
         class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
       >
@@ -11,7 +11,7 @@
         <div class="flex flex-col justify-between space-y-[10px]">
           <div
             @click.prevent="navigate('home')"
-            class="border inline-flex relative items-center py-[10px] px-[10px] bg-gray-200 w-full text-sm font-medium rounded-md border-gray-100 hover:bg-gray-100 hover:text-gray-900"
+            class="border inline-flex relative items-center py-[10px] px-[10px] bg-gray-100 w-full text-sm font-medium rounded-md border-gray-150 hover:bg-gray-100 hover:text-gray-900"
           >
             <div class="text-mg-l text-black">Home</div>
           </div>
@@ -20,7 +20,7 @@
           <div class="relative">
             <div
               @click="showDropdown('customer')"
-              class="inline-flex relative items-center bg-gray-200 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+              class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Customer Account</div>
               <svg
@@ -50,25 +50,25 @@
                 @click.prevent="navigate('customer-register')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Register
+                > Register
               </div>
               <div
                 @click.prevent="navigate('customer-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Customer List
+                > Customer List
               </div>
               <div
                 @click.prevent="navigate('authorization-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Authorize Customer
+                > Authorize Customer
               </div>
               <div
                 @click.prevent="navigate('reset-password-customer')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Reset Password
+                > Reset Password
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@
           <div class="relative">
             <div
               @click="showDropdown('report')"
-              class="inline-flex relative items-center bg-gray-200 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+              class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Report</div>
               <svg
@@ -106,7 +106,7 @@
                 @click.prevent="navigate('report-customer-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Report Customer List
+                > Report Customer List
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <div class="relative">
             <div
               @click="showDropdown('admin')"
-              class="inline-flex relative items-center bg-gray-200 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
+              class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
               <div class="text-mg-l text-black">Admin</div>
               <svg
@@ -145,19 +145,19 @@
                 @click.prevent="navigate('admin-user-register')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Register User
+                > Register User
               </div>
               <div
                 @click.prevent="navigate('admin-user-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - User List
+                > User List
               </div>
               <div
                 @click.prevent="navigate('change-password')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Change Password Login
+                > Change Password Login
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@
           <div>
             <router-link
               to="/"
-              class="inline-flex relative items-center py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-200 hover:bg-gray-100 hover:text-gray-900"
+              class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 hover:bg-gray-100 hover:text-gray-900"
             >
               <img
                 src="/src/assets/icons/icon-exit-red.png"
