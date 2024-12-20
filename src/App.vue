@@ -10,7 +10,7 @@
       <!-- Side bar -->
       <sidebar :showSide="showSide" :navigate="otherLink" />
       <div class="w-full h-full bg-gray-100">
-        <div class="hidden max-sm:block nav-mobile">
+        <div class="hidden max-sm:block bg-gray-200 nav-mobile">
           <div
             class="h-[80px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
           >
@@ -32,21 +32,21 @@
                 <g id="SVGRepo_iconCarrier">
                   <path
                     d="M5 7H19"
-                    stroke="#000000"
+                    stroke="#fff"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   ></path>
                   <path
                     d="M5 12L19 12"
-                    stroke="#000000"
+                    stroke="#fff"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   ></path>
                   <path
                     d="M5 17L19 17"
-                    stroke="#000000"
+                    stroke="#fff"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -56,10 +56,10 @@
             </div>
 
             <!--Button change language -->
-            <div class="img-nav-mb">
+            <!-- <div class="img-nav-mb">
               <img src="@/assets/img/LVB.png" alt="nav-mb" class="h-[40px]">
-            </div>
-            <div class="space-x-4 px-4">
+            </div> -->
+            <div class="space-x-4 px-3">
               <changelanguage />
             </div>
           </div>

@@ -172,24 +172,24 @@ a:hover {
 /* Nav mobile */
 .nav-mobile{
   width: 100%;
-  /* background-image: url("@/assets/img/Direct-banking-lvb_07.jpg"); */
+  background-image: url("@/assets/img/Direct-banking-lvb_05.jpg");
   background-color: rgb(221, 221, 221);
   background-size: cover;
-  /* background-position: left; */
+  background-position: center;
   background-repeat: no-repeat;
 }
 .img-nav-mb{
-  width: 100%;
-  height: 30px;
+  /* width: 100%; */
+  /* height: 30px; */
   /* background-size: cover; */
   /* background-position: center; */
   /* background-repeat: no-repeat;
   margin-left: 10px; */
 }
 .img-nav-mb{
-  background-image: url("@/assets/img/LVB.png");
+  /* background-image: url("@/assets/img/LVB.png"); */
   /* background-size: cover; */
-  background-position: center;
+  /* background-position: center; */
   /* background-repeat: no-repeat; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
