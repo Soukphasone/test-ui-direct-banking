@@ -39,37 +39,63 @@
               </tr>
             </thead>
             <tbody>
-        <tr v-for="(customer, index) in customerList" :key="customer.id">
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ index + 1 }}</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.accountNumber }}</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
-            {{ customer.fullname }}
-          </td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.email }}</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.tel }}</td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">
-            <button class="text-blue-500 hover:underline">{{ $t("edit") }}</button>
-          </td>
-          <td class="border border-gray-300 px-2 sm:px-4 py-2">
-            <button class="text-red-500 hover:underline">{{ $t("delete") }}</button>
-          </td>
-        </tr>
-      </tbody>
+              <tr
+                v-for="(customer, index) in paginatedCustomers"
+                :key="customer.id"
+              >
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ index + 1 + (currentPage - 1) * itemsPerPage }}
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ customer.accountNumber }}
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+                  {{ customer.fullname }}
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ customer.email }}
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ customer.tel }}
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  <button class="text-blue-500 hover:underline">
+                    {{ $t("edit") }}
+                  </button>
+                </td>
+                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                  <button class="text-red-500 hover:underline">
+                    {{ $t("delete") }}
+                  </button>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <div class="flex justify-center py-4 sm:py-2">
-      <el-pagination
-        background
-        layout="prev, pager, next"
-        :total="1000"
-        class="text-base sm:text-sm xs:text-xs"
-      />
-    </div>
+        <div>
+          <pagination
+            :totalItems="customerList.length"
+            :itemsPerPage="itemsPerPage"
+            v-model="currentPage"
+          />
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import { customerList } from '@/constant/dataTest';
+import Pagination from '@/components/Pagination.vue';
+
+const currentPage = ref(1);
+const itemsPerPage = 5;
+
+// Computed property for paginated customers
+const paginatedCustomers = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return customerList.slice(start, end);
+});
 </script>

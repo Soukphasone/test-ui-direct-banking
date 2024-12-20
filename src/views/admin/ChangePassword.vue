@@ -7,7 +7,7 @@
         <h2
           class="flex justify-center text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-black"
         >
-          {{ $t('change_password') }}
+          {{ $t("change_password") }}
         </h2>
         <form>
           <!--Old Password -->
@@ -15,13 +15,13 @@
             <label
               for="username"
               class="block text-sm font-medium text-black"
-              >{{ $t('old_password') }}</label
+              >{{ $t("old_password") }}</label
             >
             <input
               type="tel"
               id="username"
               class="border mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm py-2 px-2"
-              placeholder="Enter your user name"
+              :placeholder="$t('enter_old_password')"
               required
             />
           </div>
@@ -30,7 +30,7 @@
             <label
               for="password"
               class="block text-sm font-medium text-black"
-              >{{ $t('password') }}</label
+              >{{ $t("password") }}</label
             >
             <input
               type="tel"
@@ -45,7 +45,7 @@
             <label
               for="confirmPassword"
               class="block text-sm font-medium text-black"
-              >{{ $t('confirm_password') }}</label
+              >{{ $t("confirm_password") }}</label
             >
             <input
               type="tel"
@@ -55,7 +55,6 @@
               required
             />
           </div>
-
           <!-- Submit Button -->
           <div class="flex mt-6 gap-x-4">
             <button
@@ -76,6 +75,4 @@
     </div>
   </main>
 </template>
-<script setup>
-</script>
-
+<script setup></script>
