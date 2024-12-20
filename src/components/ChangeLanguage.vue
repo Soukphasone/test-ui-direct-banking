@@ -59,7 +59,7 @@
               class="flag-icon-mb"
             />
 
-            <!-- <span> {{ option.language }}</span> -->
+            <span> {{ option.lg }}</span>
           </li>
         </ul>
       </div>
@@ -86,16 +86,19 @@ const options = ref([
   {
     value: "en",
     language: "UK (EN)",
+    lg:"EN",
     img: "england-flag.png",
   },
   {
     value: "la",
     language: "ລາວ (LA)",
+    lg:"LA",
     img: "laos-flag.png",
   },
   {
     value: "vn",
     language: "Tiếng việt (VN)",
+    lg:"VN",
     img: "vietnam-flag.png",
   },
 ]);
