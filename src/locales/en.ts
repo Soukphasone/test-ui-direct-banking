@@ -1,6 +1,6 @@
 export const en = {
   language: "Language",
-  lg:"EN",
+  lg: "EN",
   welcome: "WELCOME TO LAOVIETBANK DIRECT BANKING",
   home: "Home",
   customer_account: "Customer Account",
@@ -21,7 +21,7 @@ export const en = {
   account: "Account",
   customer_information: "Customer Information",
   branch_registers: "Branch Registers",
-  branch:"Branch",
+  branch: "Branch",
   select_branch: "Select a branch",
   branch_in: "Branch in",
   full_name: "Full Name",
@@ -41,4 +41,9 @@ export const en = {
   edit: "Edit",
   delete: "Delete",
   stt: "STT",
+  account_number: "Account Number",
+  maker_id: "Maker ID",
+  created_at:"Created at",
+  authorize_status:"Authorize Status",
+  description:"Description",
 };

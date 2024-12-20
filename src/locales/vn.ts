@@ -40,4 +40,9 @@ export const vn = {
   edit: "Sửa",
   delete: "Xóa",
   stt:"Thứ tự",
+  account_number: "Số tài khoản",
+  maker_id: "Mã người tạo",
+  created_at:"Ngày tạo",
+  authorize_status:"Trang thái ủy quyển",
+  description:"Mô tả",
 };

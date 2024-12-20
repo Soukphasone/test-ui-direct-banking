@@ -40,4 +40,10 @@ export const la = {
   edit: "ແກ້ໄຂ",
   delete: "ລົບ",
   stt:"ລຳດັບ",
+  account_number: "ເລກບັນຊີ",
+  maker_id: "ລະຫັດຜູ້ສ້າງ",
+  created_at:"ວັນທີສ້າງ",
+  authorize_status:"ສະຖານະສິດ",
+  description:"ລາຍລະອຽດ",
+
 };

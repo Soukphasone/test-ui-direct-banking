@@ -7,7 +7,7 @@
         <h2
           class="flex text-xl sm:text-2xl md:text-3xl lg:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 justify-center"
         >
-          Customer Information
+        {{ $t('customer_information') }}
         </h2>
         <div class="mt-4 overflow-x-auto text-black">
           <table
@@ -16,29 +16,34 @@
             <thead>
               <tr class="bg-gray-100">
                 <th class="border border-gray-300 px-2 sm:px-4 py-2 w-[50px]">
-                  STT
+                  {{ $t('stt') }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">Branch</th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Customer ID
+                <th class="border border-gray-300 px-2 sm:px-4 py-2">                  {{ $t('branch') }}
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  User Name
+                  {{ $t('account_number') }}
+
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Full Name
+                  {{ $t('user_name') }}
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Create Date
+                  {{ $t('full_name') }}
+                  
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Maker ID
+                  {{ $t('created_at') }}
+
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Description
+                  {{ $t('maker_id') }}
+
                 </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Authorize Status
+                  {{ $t('description') }}
+                </th>
+                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ $t('authorize_status') }}
                 </th>
               </tr>
             </thead>
