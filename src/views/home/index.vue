@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto ">
+  <main class="container mx-auto">
     <div class="bg-gray-100 flex items-center justify-center">
       <div
         class="border border-gray-200 bg-white shadow-md rounded-lg p-8 w-full min-h-screen"
@@ -122,4 +122,3 @@
     </div>
   </main>
 </template>
-<script lang="ts" setup></script>

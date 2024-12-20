@@ -167,7 +167,7 @@
         <div class="h-[50px]">
           <div>
             <router-link
-              to="/"
+              to="#"
               class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 hover:bg-gray-100 hover:text-gray-900"
             >
               <img

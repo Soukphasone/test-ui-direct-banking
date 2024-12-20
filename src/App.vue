@@ -12,7 +12,7 @@
       <div class="w-full h-full bg-gray-100">
         <div class="hidden max-sm:block bg-gray-200 nav-mobile">
           <div
-            class="h-[70px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
+            class="h-[70px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between img-nav-mb"
           >
             <!-- Hamburger menu -->
             <div class="cursor-pointer w-[30px]" @click="toggleSideBar">

@@ -57,7 +57,7 @@
               class="flag-icon-mb"
             />
 
-            <span> {{ option.lg }}</span>
+            <span class="mt-0.5"> {{ option.lg }}</span>
           </li>
         </ul>
       </div>
