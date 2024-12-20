@@ -63,14 +63,14 @@ a:hover {
   position: relative;
   display: inline-block;
 }
-/* pc */
+/* PC */
 .custom-select .bt-pc {
   background: #f0f0f0;
   /* border: 2px solid black; */
   padding: 5px 5px;
   cursor: pointer;
   display: flex;
-  font-size: 15px;
+  font-size: 13px;
   color: black;
   border-radius: 2px;
   /* width: 35px; */
@@ -117,7 +117,7 @@ a:hover {
   border: 1px solid gray;
 }
 
-/* mobile */
+/* MB */
 .custom-select .bt-mb {
   background: #f0f0f0;
   /* border: 2px solid black; */

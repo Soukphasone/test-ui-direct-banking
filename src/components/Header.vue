@@ -7,12 +7,5 @@
           class=""
         />
       </div>
-      <!-- <div class="h-[60px]">
-        <img
-          src="/src/assets/img/Direct-banking-lvb_01.jpg"
-          alt="logo"
-          class="h-[60px]"
-        />
-      </div> -->
     </header>
 </template>

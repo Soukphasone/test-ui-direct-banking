@@ -12,7 +12,7 @@
           <span v-else>
             <img src="@/assets/img/vietnam-flag.png" alt="flag" class="flag-bt"
           /></span>
-          <div class="text-black px-1">{{ $t("lg") }}</div>
+          <div class="text-black px-1 mt-0.5">{{ $t("lg") }}</div>
 
         </button>
         <ul v-if="isOpen" class="dropdown-pc">
