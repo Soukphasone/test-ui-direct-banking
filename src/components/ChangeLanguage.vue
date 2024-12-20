@@ -7,14 +7,13 @@
             <img src="@/assets/img/laos-flag.png" alt="flag" class="flag-bt"
           /></span>
           <span v-else-if="check === 'en'">
-            <img
-              src="@/assets/img/united-states-flag-icon.png"
-              alt="flag"
-              class="flag-bt"
+            <img src="@/assets/img/england-flag.png" alt="flag" class="flag-bt"
           /></span>
           <span v-else>
             <img src="@/assets/img/vietnam-flag.png" alt="flag" class="flag-bt"
           /></span>
+          <div class="text-black px-1">{{ $t("lg") }}</div>
+
         </button>
         <ul v-if="isOpen" class="dropdown-pc">
           <li
@@ -42,10 +41,7 @@
             <img src="@/assets/img/laos-flag.png" alt="flag" class="flag-bt"
           /></span>
           <span v-else-if="check === 'en'">
-            <img
-              src="@/assets/img/united-states-flag-icon.png"
-              alt="flag"
-              class="flag-bt"
+            <img src="@/assets/img/england-flag.png" alt="flag" class="flag-bt"
           /></span>
           <span v-else>
             <img src="@/assets/img/vietnam-flag.png" alt="flag" class="flag-bt"
@@ -89,8 +85,8 @@ const selected = ref(currentLanguage.value);
 const options = ref([
   {
     value: "en",
-    language: "US (EN)",
-    img: "united-states-flag-icon.png",
+    language: "UK (EN)",
+    img: "england-flag.png",
   },
   {
     value: "la",

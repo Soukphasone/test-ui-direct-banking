@@ -73,7 +73,7 @@ a:hover {
   font-size: 15px;
   color: black;
   border-radius: 2px;
-  width: 35px;
+  /* width: 35px; */
   height: 30px;
   margin-top: 5px;
 }
@@ -86,9 +86,9 @@ a:hover {
   background: #fff;
   border: 1px solid #ccc;
   list-style: none;
-  padding: 5px 10px 5px 5px;
-  margin: 0;
-  width: 130px;
+  padding: 5px 10px 5px 8px;
+  margin: 5px 0 0 0;
+  width: 155px;
   color: black;
   z-index: 100;
 }
@@ -96,7 +96,7 @@ a:hover {
 .dropdown-pc li {
   padding: 5px 5px 5px 2px;
   /* cursor: pointer; */
-  font-size: 10px;
+  font-size: 13px;
   display: flex;
   gap: 10px;
 
@@ -113,7 +113,8 @@ a:hover {
 .bt-pc .flag-bt {
   width: 20px;
   height: 15px;
-  margin: 3px 0 0 2px;
+  margin: 3px 0 0 5px;
+  border: 1px solid gray;
 }
 
 /* mobile */
