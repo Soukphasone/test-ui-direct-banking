@@ -5,9 +5,9 @@
     </div>
           <div class="h-[60px]">
         <img
-          src="/src/assets/img/Direct-banking-lvb_04.jpg"
+          src="/src/assets/img/Direct-banking-lvb_04_2.jpg"
           alt="logo"
-          class="h-[60px]"
+          class="hidden max-sm:block h-[60px]"
         />
       </div>
   </footer>
