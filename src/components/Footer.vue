@@ -7,7 +7,7 @@
         <img
           src="/src/assets/img/Direct-banking-lvb_04_2.jpg"
           alt="logo"
-          class="hidden max-sm:block h-[60px]"
+          class="hidden max-sm:block h-[55px]"
         />
       </div>
   </footer>

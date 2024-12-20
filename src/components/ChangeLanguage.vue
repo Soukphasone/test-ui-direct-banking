@@ -13,7 +13,6 @@
             <img src="@/assets/img/vietnam-flag.png" alt="flag" class="flag-bt"
           /></span>
           <div class="text-black px-1 mt-0.5">{{ $t("lg") }}</div>
-
         </button>
         <ul v-if="isOpen" class="dropdown-pc">
           <li
@@ -26,7 +25,6 @@
               alt="flag"
               class="flag-icon-pc"
             />
-
             <span> {{ option.language }}</span>
           </li>
         </ul>
@@ -86,19 +84,19 @@ const options = ref([
   {
     value: "en",
     language: "UK (EN)",
-    lg:"EN",
+    lg: "EN",
     img: "england-flag.png",
   },
   {
     value: "la",
     language: "ລາວ (LA)",
-    lg:"LA",
+    lg: "LA",
     img: "laos-flag.png",
   },
   {
     value: "vn",
     language: "Tiếng việt (VN)",
-    lg:"VN",
+    lg: "VN",
     img: "vietnam-flag.png",
   },
 ]);
