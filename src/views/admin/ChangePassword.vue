@@ -15,7 +15,7 @@
             <label
               for="username"
               class="block text-sm font-medium text-black"
-              >{{ $t('password') }}</label
+              >{{ $t('old_password') }}</label
             >
             <input
               type="tel"

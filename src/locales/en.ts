@@ -30,12 +30,14 @@ export const en = {
   login_information: "Login Information",
   user_name: "User Name",
   password: "Password",
+  old_password: "Old password",
   confirm_password: "Confirm Password",
   enter_name: "Enter name",
   enter_full_name: "Enter full name",
   enter_email: "Enter email",
   enter_tel: "Enter number phone",
   enter_password: "Enter password",
+  enter_old_password: "Enter old password",
   enter_confirm_password: "Enter confirm password ",
   cancel: "Cancel",
   edit: "Edit",
@@ -47,3 +49,4 @@ export const en = {
   authorize_status:"Authorize Status",
   description:"Description",
 };
+

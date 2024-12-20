@@ -18,7 +18,9 @@
                 <th class="border border-gray-300 px-2 sm:px-4 py-2 w-[100px]">
                   {{ $t("stt") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">{{ $t('account_number') }}</th>
+                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                  {{ $t("account_number") }}
+                </th>
                 <th class="border border-gray-300 px-2 sm:px-4 py-2">
                   {{ $t("full_name") }}
                 </th>
@@ -37,39 +39,37 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  010010490
-                </td>
-                <td
-                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
-                >
-                  Soukphasone Douangpanya
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  soukphasone2001@gmail.com
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  020 99110019
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2"></td>
-              </tr>
-            </tbody>
+        <tr v-for="(customer, index) in customerList" :key="customer.id">
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ index + 1 }}</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.accountNumber }}</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600">
+            {{ customer.fullname }}
+          </td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.email }}</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">{{ customer.tel }}</td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">
+            <button class="text-blue-500 hover:underline">{{ $t("edit") }}</button>
+          </td>
+          <td class="border border-gray-300 px-2 sm:px-4 py-2">
+            <button class="text-red-500 hover:underline">{{ $t("delete") }}</button>
+          </td>
+        </tr>
+      </tbody>
           </table>
         </div>
-        <!-- <div class="flex justify-center py-4 sm:py-2">
+        <div class="flex justify-center py-4 sm:py-2">
       <el-pagination
         background
         layout="prev, pager, next"
         :total="1000"
         class="text-base sm:text-sm xs:text-xs"
       />
-    </div> -->
+    </div>
       </div>
     </div>
   </main>
 </template>
 
-<script lang="ts" setup></script>
+<script setup>
+import { customerList } from '@/constant/dataTest';
+</script>
