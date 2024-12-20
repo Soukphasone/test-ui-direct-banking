@@ -5,9 +5,8 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts">
-defineProps<{
-  hiddenContent: boolean; 
-}>();
-
+<script setup>
+defineProps({
+  hiddenContent: Boolean,
+});
 </script>

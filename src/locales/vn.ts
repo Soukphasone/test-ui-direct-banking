@@ -1,5 +1,6 @@
 export const vn = {
   language: "Ngôn ngữ",
+  lg:"VN",
   welcome: "CHÀO MỪNG ĐẾN NGÂN HÀNG LAOVIET DIRECT BANKING",
   home: "Trang chính",
   customer_account: "Tài Khoản Khách Hàng",

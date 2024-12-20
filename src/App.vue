@@ -60,7 +60,7 @@
               <img src="@/assets/img/LVB.png" alt="nav-mb" class="h-[40px]">
             </div> -->
             <div class="space-x-4 px-3">
-              <changelanguage />
+              <changelanguage :hiddenContent="hiddenContent"/>
             </div>
           </div>
         </div>

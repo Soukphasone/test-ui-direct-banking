@@ -1,5 +1,6 @@
 export const la = {
   language: "ພາສາ",
+  lg:"LA",
   welcome: "ຍິນດີຕ້ອນຮັບສູ່ ທະນາຄານຮ່ວມພັດທະນາລາວຫວຽດ DIRECT BANKING",
   home: "ໜ້າຫຼັກ",
   customer_account: "ບັນຊີລູກຄ້າ",

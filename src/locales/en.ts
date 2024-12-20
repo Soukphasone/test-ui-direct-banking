@@ -1,5 +1,6 @@
 export const en = {
   language: "Language",
+  lg:"EN",
   welcome: "WELCOME TO LAOVIETBANK DIRECT BANKING",
   home: "Home",
   customer_account: "Customer Account",
