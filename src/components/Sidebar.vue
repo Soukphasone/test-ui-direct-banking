@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="showSide"
-    class="hidden max-sm:block w-[300px] h-full bg-gray-200 text-white"
+    class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
   >
     <div class="h-[calc(100vh-50px)] bg-gray-100 py-[20px]">
       <div
@@ -68,7 +68,7 @@
                 @click.prevent="navigate('reset-password-customer')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                - Reset Password Customer
+                - Reset Password
               </div>
             </div>
           </div>
