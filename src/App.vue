@@ -12,7 +12,7 @@
       <div class="w-full h-full bg-gray-100">
         <div class="hidden max-sm:block bg-gray-200 nav-mobile">
           <div
-            class="h-[80px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
+            class="h-[70px] flex items-center shadow-sm px-[5px] w-full py-[10px] z-10 justify-between"
           >
             <!-- Hamburger menu -->
             <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
@@ -54,11 +54,7 @@
                 </g>
               </svg>
             </div>
-
-            <!--Button change language -->
-            <!-- <div class="img-nav-mb">
-              <img src="@/assets/img/LVB.png" alt="nav-mb" class="h-[40px]">
-            </div> -->
+               <!-- Button change language-->
             <div class="space-x-4 px-3">
               <changelanguage :hiddenContent="hiddenContent"/>
             </div>
