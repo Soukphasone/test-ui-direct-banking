@@ -61,13 +61,14 @@
               type="submit"
               class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-400 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Register
+              {{ $t("change_password") }}
             </button>
+
             <button
               type="submit"
               class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-400 hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
-              Cancel
+              {{ $t("cancel") }}
             </button>
           </div>
         </form>
@@ -75,4 +76,6 @@
     </div>
   </main>
 </template>
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+</script>

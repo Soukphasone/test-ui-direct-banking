@@ -31,6 +31,13 @@ nav {
   color: white;
   /* margin-top: 6.8rem; */
 }
+/* Table */
+table{
+width: 100%;
+}
+table th{
+  background-color: rgb(37, 131, 207);
+}
 
 /* main */
 @media (max-width: 640px) {

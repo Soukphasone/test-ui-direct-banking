@@ -11,29 +11,29 @@
         </h2>
         <div class="mt-4 overflow-x-auto">
           <table
-            class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base text-black"
+            class="table-auto w-full border-collapse text-sm sm:text-base text-black"
           >
             <thead>
-              <tr class="bg-gray-100">
-                <th class="border border-gray-300 px-2 sm:px-4 py-2 w-[100px]">
+              <tr class="bg-blue-500 text-white">
+                <th class="px-2 sm:px-4 py-2 w-[100px]">
                   {{ $t("stt") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("account_number") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("full_name") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("email") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("tel") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("edit") }}
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
+                <th class="px-2 sm:px-4 py-2">
                   {{ $t("delete") }}
                 </th>
               </tr>
@@ -43,29 +43,29 @@
                 v-for="(customer, index) in paginatedCustomers"
                 :key="customer.id"
               >
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   {{ index + 1 + (currentPage - 1) * itemsPerPage }}
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   {{ customer.accountNumber }}
                 </td>
                 <td
-                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
                   {{ customer.fullname }}
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   {{ customer.email }}
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   {{ customer.tel }}
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   <button class="text-blue-500 hover:underline">
                     {{ $t("edit") }}
                   </button>
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   <button class="text-red-500 hover:underline">
                     {{ $t("delete") }}
                   </button>
@@ -78,7 +78,7 @@
           <pagination
             :totalItems="customerList.length"
             :itemsPerPage="itemsPerPage"
-            :visiblePages="4"
+            :visiblePages="3"
             v-model="currentPage"
           />
         </div>
@@ -102,3 +102,4 @@ const paginatedCustomers = computed(() => {
   return customerList.slice(start, end);
 });
 </script>
+

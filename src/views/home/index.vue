@@ -22,8 +22,9 @@
               id="account-select"
               class="border rounded px-2 py-1 text-gray-500"
             >
-              <option value="" disabled selected>Select account name</option>
+              <option value="" disabled selected>Select account</option>
               <option value="account1">Account 1</option>
+              name
               <option value="account2">Account 2</option>
               <option value="account3">Account 3</option>
             </select>
@@ -51,76 +52,110 @@
 
         <div class="mb-6 py-6 text-black">{{ $t("balance") }}:</div>
 
-        <!-- Results Section -->
-        <!-- <div class="mt-4 overflow-x-auto text-black">
+        <!-- Results Table list -->
+        <div class="mt-4 overflow-x-auto text-black">
           <table
-            class="table-auto w-full border-collapse border border-gray-300 text-sm sm:text-base"
+            class="table-auto w-full border-collapse rounded-md text-sm sm:text-base"
           >
             <thead>
-              <tr class="bg-gray-100">
-                <th class="border border-gray-300 px-2 sm:px-4 py-2 w-[50px]">
-                  STT
+              <tr class="bg-gray-800 text-white">
+                <th
+                  class="px-2 sm:px-4 py-2 text-center"
+                >
+                  DATE
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">Branch</th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Customer ID
+                <th
+                  class="px-2 sm:px-4 py-2 text-center"
+                >
+                  TRAN.NO
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  User Name
+                <th class="px-2 sm:px-4 py-2 text-center">
+                  DESCRIPTION
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Full Name
+                <th
+                  class="px-2 sm:px-4 py-2 text-center"
+                >
+                  WITHDRAW
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Create Date
+                <th
+                  class="px-2 sm:px-4 py-2 text-center"
+                >
+                  DEPOSIT
                 </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Maker ID
-                </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Description
-                </th>
-                <th class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Authorize Status
+                <th
+                  class="px-2 sm:px-4 py-2 text-center"
+                >
+                  BALANCE
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">1</td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">010</td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  010265044
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
-                </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  03/05/2024
+              <tr class="bg-gray-50 hover:bg-gray-100">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  22/10/2024 14:21:37
                 </td>
                 <td
-                  class="border border-gray-300 px-2 sm:px-4 py-2 text-green-600"
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  012INTHAVA
+                  010CHDP242960040
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">
-                  Add New User
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                  Cash Deposit BY SOUKPHASONE DOUANGPANYA
                 </td>
-                <td class="border border-gray-300 px-2 sm:px-4 py-2">U</td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  0
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  50,000
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  50,000
+                </td>
               </tr>
+              <tr class="bg-gray-50 hover:bg-gray-100">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  22/10/2024 14:21:37
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  010CHDP242960040
+                </td>
+                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                  Cash Deposit BY SOUKPHASONE DOUANGPANYA
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  0
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  50,000
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  50,000
+                </td>
+              </tr>
+            
             </tbody>
           </table>
         </div>
-        <div class="flex justify-center py-4 sm:py-2">
-          <el-button type="primary">Refresh</el-button>
-          <el-button type="primary">Authorize</el-button>
-        </div> -->
       </div>
     </div>
   </main>
 </template>
-<script setup>
-</script>
+<script setup></script>
