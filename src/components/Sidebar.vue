@@ -3,6 +3,15 @@
     v-if="showSide"
     class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
   >
+    <div class="h-[70px] bg-gray-50 flex justify-start items-center">
+      <div class="px-[70px] mt-3">
+        <!-- <h3 class="font-bold text-xl">Admin Dashboard</h3> -->
+        <img
+                src="/src/assets/img/LVB.png"
+                alt="logo"
+              />
+      </div>
+    </div>
     <div class="h-[calc(100vh-50px)] bg-gray-50 py-[20px]">
       <div
         class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
@@ -13,7 +22,7 @@
             @click.prevent="navigate('home')"
             class="border inline-flex relative items-center py-[10px] px-[10px] bg-gray-100 w-full text-sm font-medium rounded-md border-gray-150 hover:bg-gray-100 hover:text-gray-900"
           >
-            <div class="text-mg-l text-black">{{$t('home')}}</div>
+            <div class="text-mg-l text-black">{{ $t("home") }}</div>
           </div>
 
           <!-- Customer Account with Dropdown -->
@@ -22,7 +31,9 @@
               @click="showDropdown('customer')"
               class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
-              <div class="text-mg-l text-black">{{$t('customer_account')}}</div>
+              <div class="text-mg-l text-black">
+                {{ $t("customer_account") }}
+              </div>
               <svg
                 class="ml-auto w-4 h-4 transition-transform duration-300"
                 :class="{ 'rotate-180': showCustomerDropdown }"
@@ -50,25 +61,25 @@
                 @click.prevent="navigate('customer-register')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{$t('register')}}
+                > {{ $t("register") }}
               </div>
               <div
                 @click.prevent="navigate('customer-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{$t('customer_list')}}
+                > {{ $t("customer_list") }}
               </div>
               <div
                 @click.prevent="navigate('authorization-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{$t('authorize_customer')}}
+                > {{ $t("authorize_customer") }}
               </div>
               <div
                 @click.prevent="navigate('reset-password-customer')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{ $t('reset_pass_customer') }}
+                > {{ $t("reset_pass_customer") }}
               </div>
             </div>
           </div>
@@ -78,7 +89,7 @@
               @click="showDropdown('report')"
               class="border inline-flex relative items-center bg-gray-100 py-[10px] px-[10px] w-full text-sm font-medium rounded-md border-gray-150 cursor-pointer hover:bg-gray-100 hover:text-gray-900"
             >
-              <div class="text-mg-l text-black">{{ $t('report') }}</div>
+              <div class="text-mg-l text-black">{{ $t("report") }}</div>
               <svg
                 class="ml-auto w-4 h-4 transition-transform duration-300"
                 :class="{ 'rotate-180': showReportDropdown }"
@@ -106,7 +117,7 @@
                 @click.prevent="navigate('report-customer-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{$t('report_customer_list')}}
+                > {{ $t("report_customer_list") }}
               </div>
             </div>
           </div>
@@ -145,19 +156,19 @@
                 @click.prevent="navigate('admin-user-register')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{ $t('register') }}
+                > {{ $t("register") }}
               </div>
               <div
                 @click.prevent="navigate('admin-user-list')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{ $t('user_list') }}
+                > {{ $t("user_list") }}
               </div>
               <div
                 @click.prevent="navigate('change-password')"
                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
               >
-                > {{ $t('change_password') }}
+                > {{ $t("change_password") }}
               </div>
             </div>
           </div>
