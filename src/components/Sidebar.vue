@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="showSide"
-    class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
+    class="hidden max-sm:block w-[600px] h-full bg-gray-50 text-white"
   >
     <div class="h-[60px] bg-gray-50 flex justify-start items-center">
       <div class="px-[60px] mt-4">
@@ -12,7 +12,7 @@
               />
       </div>
     </div>
-    <div class="h-[calc(110vh-155px)] bg-gray-50 py-[20px]">
+    <div class="border border-red-300 h-[calc(120vh-250px)] bg-gray-50 py-[20px]">
       <div
         class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
       >
@@ -175,7 +175,7 @@
         </div>
 
         <!-- Exit Button -->
-        <div class="">
+        <div class="h-[50px]">
           <div>
             <router-link
               to="#"
