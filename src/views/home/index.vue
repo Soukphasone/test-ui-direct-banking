@@ -120,7 +120,7 @@
                   50,000
                 </td>
               </tr>
-              <tr class="bg-gray-50 hover:bg-gray-100">
+              <tr class="hover:bg-gray-100">
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
