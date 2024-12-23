@@ -47,4 +47,7 @@ export const la = {
   created_at: "ວັນທີສ້າງ",
   authorize_status: "ສະຖານະສິດ",
   description: "ລາຍລະອຽດ",
+  withdraw:"ຖອນ",
+  deposit:"ຝາກ",
+  date:"ວັນທີ"
 };

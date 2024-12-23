@@ -59,103 +59,92 @@
           >
             <thead>
               <tr class="bg-gray-800 text-white">
-                <th
-                  class="px-2 sm:px-4 py-2 text-center"
-                >
-                  DATE
-                </th>
-                <th
-                  class="px-2 sm:px-4 py-2 text-center"
-                >
-                  TRAN.NO
+                <th class="px-2 sm:px-4 py-2 text-center">{{ $t("stt") }}</th>
+                <th class="px-2 sm:px-4 py-2 text-center">{{ $t("date") }}</th>
+                <th class="px-2 sm:px-4 py-2 text-center">Tran.No</th>
+                <th class="px-2 sm:px-4 py-2 text-center">
+                  {{ $t("description") }}
                 </th>
                 <th class="px-2 sm:px-4 py-2 text-center">
-                  DESCRIPTION
+                  {{ $t("withdraw") }}
                 </th>
-                <th
-                  class="px-2 sm:px-4 py-2 text-center"
-                >
-                  WITHDRAW
+                <th class="px-2 sm:px-4 py-2 text-center">
+                  {{ $t("deposit") }}
                 </th>
-                <th
-                  class="px-2 sm:px-4 py-2 text-center"
-                >
-                  DEPOSIT
-                </th>
-                <th
-                  class="px-2 sm:px-4 py-2 text-center"
-                >
-                  BALANCE
+                <th class="px-2 sm:px-4 py-2 text-center">
+                  {{ $t("balance") }}
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="hover:bg-gray-100">
+              <tr
+                class="hover:bg-gray-100"
+                v-for="(report, index) in paginatedReport"
+                :key="report.id"
+              >
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  22/10/2024 14:21:37
+                  {{ index + 1 + (currentPage - 1) * itemsPerPage }}
                 </td>
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  010CHDP242960040
-                </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
-                  Cash Deposit BY SOUKPHASONE DOUANGPANYA
+                  {{ report.date }}
                 </td>
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  0
+                  {{ report.tranNo }}
                 </td>
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  50,000
+                  {{ report.description }}
                 </td>
                 <td
                   class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
                 >
-                  50,000
+                  {{ report.withdraw }}
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  {{ report.deposit }}
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
+                  {{ report.balance }}
                 </td>
               </tr>
-              <tr class="hover:bg-gray-100">
-                <td
-                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
-                >
-                  22/10/2024 14:21:37
-                </td>
-                <td
-                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
-                >
-                  010CHDP242960040
-                </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
-                  Cash Deposit BY SOUKPHASONE DOUANGPANYA
-                </td>
-                <td
-                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
-                >
-                  0
-                </td>
-                <td
-                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
-                >
-                  50,000
-                </td>
-                <td
-                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
-                >
-                  50,000
-                </td>
-              </tr>
-            
             </tbody>
           </table>
+        </div>
+        <div>
+          <pagination
+            :totalItems="report_WD_DP.length"
+            :itemsPerPage="itemsPerPage"
+            :visiblePages="3"
+            v-model="currentPage"
+          />
         </div>
       </div>
     </div>
   </main>
 </template>
-<script setup></script>
+<script setup>
+import { ref, computed } from "vue";
+import { report_WD_DP } from "@/constant/dataTest";
+import Pagination from "@/components/Pagination.vue";
+
+const currentPage = ref(1);
+const itemsPerPage = 5;
+
+// Computed property for paginated customers
+const paginatedReport = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return report_WD_DP.slice(start, end);
+});
+</script>

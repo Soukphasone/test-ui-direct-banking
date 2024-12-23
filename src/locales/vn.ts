@@ -1,6 +1,6 @@
 export const vn = {
   language: "Ngôn ngữ",
-  lg:"VN",
+  lg: "VN",
   welcome: "CHÀO MỪNG ĐẾN NGÂN HÀNG LAOVIET DIRECT BANKING",
   home: "Trang chính",
   customer_account: "Tài Khoản Khách Hàng",
@@ -41,10 +41,11 @@ export const vn = {
   cancel: "Hủy",
   edit: "Sửa",
   delete: "Xóa",
-  stt:"Thứ tự",
+  stt: "Thứ tự",
   account_number: "Số tài khoản",
   maker_id: "Mã người tạo",
-  created_at:"Ngày tạo",
-  authorize_status:"Trang thái ủy quyển",
-  description:"Mô tả",
+  created_at: "Ngày tạo",
+  authorize_status: "Trang thái ủy quyển",
+  description: "Mô tả",
+  date: "Ngày",
 };

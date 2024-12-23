@@ -48,5 +48,9 @@ export const en = {
   created_at:"Created at",
   authorize_status:"Authorize Status",
   description:"Description",
+  withdraw:"Withdraw",
+  deposit:"Deposit",
+  date: "Date",
+
 };
 
