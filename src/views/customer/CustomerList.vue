@@ -40,13 +40,18 @@
             </thead>
             <tbody>
               <tr
+                class="hover:bg-gray-100"
                 v-for="(customer, index) in paginatedCustomers"
                 :key="customer.id"
               >
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   {{ index + 1 + (currentPage - 1) * itemsPerPage }}
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   {{ customer.accountNumber }}
                 </td>
                 <td
@@ -54,18 +59,26 @@
                 >
                   {{ customer.fullname }}
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   {{ customer.email }}
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   {{ customer.tel }}
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   <button class="text-blue-500 hover:underline">
                     {{ $t("edit") }}
                   </button>
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center"
+                >
                   <button class="text-red-500 hover:underline">
                     {{ $t("delete") }}
                   </button>
@@ -102,4 +115,3 @@ const paginatedCustomers = computed(() => {
   return customerList.slice(start, end);
 });
 </script>
-

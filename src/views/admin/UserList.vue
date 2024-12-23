@@ -14,7 +14,7 @@
             class="table-auto w-full text-sm sm:text-base text-black"
           >
             <thead>
-              <tr class="bg-gray-100 text-white">
+              <tr class="text-white">
                 <th class="px-2 sm:px-4 py-2 w-[50px]">
                   STT
                 </th>
@@ -29,7 +29,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="hover:bg-gray-100">
                 <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">1</td>
                 <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-4 text-center">
                   Soukphasone Douangpanya

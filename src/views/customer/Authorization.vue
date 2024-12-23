@@ -10,9 +10,7 @@
           {{ $t("customer_information") }}
         </h2>
         <div class="mt-4 overflow-x-auto text-black">
-          <table
-            class="table-auto w-full border-collapse text-sm sm:text-base"
-          >
+          <table class="table-auto w-full border-collapse text-sm sm:text-base">
             <thead>
               <tr class="bg-gray-100 text-white">
                 <th class="px-2 sm:px-4 py-2">
@@ -45,19 +43,35 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">1</td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">010</td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+              <tr class="hover:bg-gray-100">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  1
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  010
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   010265044
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   03/05/2024
                 </td>
                 <td
@@ -65,24 +79,46 @@
                 >
                   012INTHAVA
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   Add New User
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">U</td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  U
+                </td>
               </tr>
-              <tr>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">1</td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">010</td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+              <tr class="hover:bg-gray-100">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  1
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  010
+                </td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   010265044
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   CIVIL AND BUILDING CONTRACTOR LAO SOLE CO LTD
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   03/05/2024
                 </td>
                 <td
@@ -90,10 +126,16 @@
                 >
                   012INTHAVA
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
                   Add New User
                 </td>
-                <td class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center">U</td>
+                <td
+                  class="border-b-4 border-b-gray-200 px-2 sm:px-4 py-2 text-center"
+                >
+                  U
+                </td>
               </tr>
             </tbody>
           </table>
