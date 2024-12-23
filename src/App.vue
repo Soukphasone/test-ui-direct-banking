@@ -32,21 +32,21 @@
                 <g id="SVGRepo_iconCarrier">
                   <path
                     d="M5 7H19"
-                    stroke="#fff"
+                    stroke="#e7e3e2"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   ></path>
                   <path
                     d="M5 12L19 12"
-                    stroke="#fff"
+                    stroke="#e7e3e2"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   ></path>
                   <path
                     d="M5 17L19 17"
-                    stroke="#fff"
+                    stroke="#e7e3e2"
                     stroke-width="3"
                     stroke-linecap="round"
                     stroke-linejoin="round"

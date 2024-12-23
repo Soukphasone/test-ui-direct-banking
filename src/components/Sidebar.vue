@@ -26,7 +26,7 @@
               <svg
                 class="ml-auto w-4 h-4 transition-transform duration-300"
                 :class="{ 'rotate-180': showCustomerDropdown }"
-                :style="{ stroke: showCustomerDropdown ? 'black' : 'red' }"
+                :style="{ stroke: showCustomerDropdown ? 'black' : 'black' }"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -82,7 +82,7 @@
               <svg
                 class="ml-auto w-4 h-4 transition-transform duration-300"
                 :class="{ 'rotate-180': showReportDropdown }"
-                :style="{ stroke: showCustomerDropdown ? 'black' : 'red' }"
+                :style="{ stroke: showCustomerDropdown ? 'black' : 'black' }"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -121,7 +121,7 @@
               <svg
                 class="ml-auto w-4 h-4 transition-transform duration-300"
                 :class="{ 'rotate-180': showAdminDropdown }"
-                :style="{ stroke: showCustomerDropdown ? 'black' : 'red' }"
+                :style="{ stroke: showCustomerDropdown ? 'black' : 'black' }"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
