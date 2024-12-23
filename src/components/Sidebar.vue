@@ -3,8 +3,8 @@
     v-if="showSide"
     class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
   >
-    <div class="h-[70px] bg-gray-50 flex justify-start items-center">
-      <div class="px-[70px] mt-3">
+    <div class="h-[50px] bg-gray-50 flex justify-start items-center">
+      <div class="px-[70px] mt-7 ">
         <!-- <h3 class="font-bold text-xl">Admin Dashboard</h3> -->
         <img
                 src="/src/assets/img/LVB.png"
@@ -175,7 +175,7 @@
         </div>
 
         <!-- Exit Button -->
-        <div class="h-[50px]">
+        <div class="">
           <div>
             <router-link
               to="#"
