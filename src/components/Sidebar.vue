@@ -12,7 +12,7 @@
               />
       </div>
     </div>
-    <div class="border border-red-300 h-[calc(120vh-250px)] bg-gray-50 py-[20px]">
+    <div class="border border-red-300 h-[calc(100vh)] bg-gray-50 py-[20px]">
       <div
         class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
       >
