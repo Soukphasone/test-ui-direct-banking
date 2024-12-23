@@ -3,8 +3,8 @@
     v-if="showSide"
     class="hidden max-sm:block w-[600px] h-full bg-gray-200 text-white"
   >
-    <div class="h-[50px] bg-gray-50 flex justify-start items-center">
-      <div class="px-[70px] mt-7 ">
+    <div class="h-[80px] bg-gray-50 flex justify-start items-center">
+      <div class="px-[70px] ">
         <!-- <h3 class="font-bold text-xl">Admin Dashboard</h3> -->
         <img
                 src="/src/assets/img/LVB.png"
@@ -12,7 +12,7 @@
               />
       </div>
     </div>
-    <div class="h-[calc(100vh-50px)] bg-gray-50 py-[20px]">
+    <div class="h-[calc(100vh-80px)] bg-gray-50 py-[20px]">
       <div
         class="flex flex-col justify-between h-full px-[20px] space-y-[10px]"
       >
